@@ -1,0 +1,406 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#bar-list {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.2s; /* don't forget to set a duration! */
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.nav-link {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover {
+    box-shadow: 0px 1px 0px #303030;
+}
+
+.main .main-text {
+    color: #303030;
+}
+
+.main .main-subtext {
+    color: #303030;
+}
+
+.main .main-text__dot {
+    width: 8px;
+    height: 8px;
+    background-color: #303030;
+    display: inline-block;
+    margin-left: 4px;
+}
+.main-more-btn {
+    background-color: #fabe0a;
+}
+
+.main-image {
+    position: relative;
+}
+
+.main-img {
+    width: 400px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    transform: rotate(15deg);
+}
+
+.main-line {
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border: 2px solid #EFEFEF;
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    transform: rotate(-15deg);
+    position: relative;
+    right: 25px;
+}
+
+.main-line-break-1 {
+    width: 230px;
+    height: 110px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -44px;
+    right: 50px;
+    transform: rotate(15deg);
+}
+
+.main-image__btn-circle {
+    background-color: #05285a;
+    box-shadow: 0px 0px 0px 5px #fabe0a;
+}
+
+.main-btn-1 {
+    position: absolute;
+    transform: rotate(15deg);
+    top: 85px;
+    right: 468px;
+}
+
+.main-btn-2 {
+    position: absolute;
+    transform: rotate(15deg);
+    top: 200px;
+    right: 510px;
+}
+
+.main-btn-3 {
+    position: absolute;
+    transform: rotate(15deg);
+    top: 320px;
+    right: 494px;
+}
+
+.main-btn-4 {
+    position: absolute;
+    transform: rotate(15deg);
+    top: 430px;
+    right: 415px;
+}
+
+.main-image__btn-circle.active {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 0px 10px #fabe0a;
+}
+
+.company-title {
+    color: #303030;
+}
+
+.company-text span {
+    margin-left: 47px;
+}
+
+.catalogue-title {
+    color: #303030;
+}
+
+.catalogue-text {
+    color: #303030;
+}
+
+.catalogue-slider-line {
+    width: 200px;
+    height: 650px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    right: -100px;  
+}
+
+.catalogue-btn-0 {
+    position: absolute;
+    top: 60px;
+    right: 158px;
+}
+
+.catalogue-btn-1 {
+    position: absolute;
+    top: 150px;
+    right: 180px;
+}
+
+.catalogue-btn-2 {
+    position: absolute;
+    top: 240px;
+    right: 190px;
+}
+
+.catalogue-btn-3 {
+    position: absolute;
+    top: 340px;
+    right: 188px;
+}
+
+.catalogue-btn-5 {
+    position: absolute;
+    top: 450px;
+    right: 183px;
+}
+
+.catalogue-btn-6 {
+    position: absolute;
+    top: 550px;
+    right: 160px;
+}
+
+
+.catalogue-image__btn-circle {
+    background-color: #05285a;
+    box-shadow: 0px 0px 0px 5px #fabe0a;
+}
+
+.catalogue-image__btn.active p{
+    font-size: 24px;
+    color: #303030;
+    font-weight: 600;
+}
+
+.catalogue-image__btn.active span {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 0px 10px #fabe0a;
+}
+
+.catalogue-order-link {
+    background-color: #fabe0a;
+}
+
+.order {
+    background-color: #05285a;
+}
+
+.order .container {
+    padding: 60px 0px;
+}
+
+.order-title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.order-list {
+    padding-top: 60px;
+}
+
+.order-link {
+    width: 200px;
+    height: 150px;
+    position: relative;
+}
+
+.order-link::after {
+    content: '';
+    background-image: url('../../images/right.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    width: 10px;
+    height: 17px;
+    right: 20px;
+    top: 25px;
+    -webkit-animation: slide 0.2s ease 1 forwards;
+}
+
+.order-link:hover::after {
+    transition: 0.2s;
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.order-img {
+    width: 60px;
+}
+
+.order-item:nth-child(2n) img {
+    width: 50px;
+} 
+
+.order-item:nth-child(4n) img {
+    width: 55px;
+} 
+
+.order-text {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.why .container {
+    padding-top: 100px;
+}
+
+.why-list {
+    margin-left: 40px;
+}
+
+.why-title {
+    color: #303030;
+}
+
+.why-text {
+    width: 450px;
+    font-size: 16px;
+    color: #303030;
+}
+
+.why-text span {
+    margin-left: 47px;
+}
+
+.why-img {
+    width: 600px;
+    object-fit: cover;
+}
+
+.why-item {
+    width: 260px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    padding: 30px 20px 25px 30px;
+}
+
+.why-item span {
+    width: 65px;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: -35px;
+    left: 30px;
+}
+
+.why-element-img {
+    object-fit: cover;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 38px;
+}
+
+.why-text {
+    font-size: 16px;
+    color: #303030;
+    display: inline-block;
+    width: 200px;
+}
+
+.why-subtext {
+    font-size: 13px;
+    color: #303030;
+    line-height: 15px;
+}
+
+.brend-title {
+    color: #303030;
+    margin-bottom: 80px;
+}
+
+.brend-item:nth-child(2n) img{
+    width: 150px;
+}
+
+.brend-item:nth-child(3n) img{
+    width: 260px;
+}
+
+.brend-img {
+    width: 170px;
+}
+
+.questions form {
+    background-color: #05285a;
+}
+
+.questions-form-link {
+    background-color: #fabe0a;
+}
+
+.questions-img {
+    width: 750px;
+}
+
+.contact-list {
+    margin-right: 70px;
+}
+
+.contact-title {
+    color: #303030;
+}
+
+.contact-social-links {
+    margin-top: 70px;
+}
+
+.footer {
+    background-color: #05285a;
+}
+
+.contact-form-link {
+    background-color: #fabe0a;
+}
