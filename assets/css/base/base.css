@@ -36,6 +36,15 @@ html {
     box-shadow: 0px 1px 0px #303030;
 }
 
+.main-text-side {
+    position: relative;
+}
+
+.main-social-links {
+    position: absolute;
+    bottom: -160px;
+}
+
 .main .main-text {
     color: #303030;
 }
@@ -65,7 +74,46 @@ html {
     top: 80px;
     right: 20px;
     transform: rotate(15deg);
+    display: none;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
 }
+
+.main-img.first {
+    display: inline-block;
+    width: 330px;
+    top: 110px;
+    right: 100px;
+    animation: open 0.2s ease;
+    -webkit-animation: open 0.2s ease;
+}
+
+.main-img.second {
+    width: 390px;
+    right: 60px;
+    top: 130px;
+    display: inline-block;
+    animation: open 0.2s ease;
+}
+
+.main-img.third {
+    width: 480px;
+    top: 150px;
+    right: 0px;
+    display: inline-block;
+    animation: open 0.2s ease;
+}
+
+.main-img.four {
+    width: 350px;
+    top: 140px;
+    right: 35px;
+    display: inline-block;
+    animation: open 0.2s ease;
+}
+
 
 .main-line {
     width: 520px;
@@ -82,9 +130,19 @@ html {
 .main-line-break-1 {
     width: 230px;
     height: 110px;
-    background-color: #ffffff;
+    background-color: #fff;
     position: absolute;
-    bottom: -44px;
+    bottom: -40px;
+    right: 50px;
+    transform: rotate(15deg);
+}
+
+.main-line-break-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 30px;
     right: 50px;
     transform: rotate(15deg);
 }
@@ -98,7 +156,7 @@ html {
     position: absolute;
     transform: rotate(15deg);
     top: 85px;
-    right: 468px;
+    right: 465px;
 }
 
 .main-btn-2 {
@@ -112,20 +170,33 @@ html {
     position: absolute;
     transform: rotate(15deg);
     top: 320px;
-    right: 494px;
+    right: 496px;
 }
 
 .main-btn-4 {
     position: absolute;
     transform: rotate(15deg);
     top: 430px;
-    right: 415px;
+    right: 417px;
 }
 
-.main-image__btn-circle.active {
+.main-image__btn.active span {
     width: 20px;
     height: 20px;
-    box-shadow: 0px 0px 0px 10px #fabe0a;
+    box-shadow: 0px 0px 0px 10px #fabe0aff;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    animation: open 0.2s ease;
+}
+
+.main-image__btn.active p {
+    font-size: 20px;
+    color: #303030;
+    font-weight: 700;
+    animation: open 0.2s ease;
 }
 
 .company-title {
@@ -134,6 +205,16 @@ html {
 
 .company-text span {
     margin-left: 47px;
+}
+
+.catalogue-list.active {
+    display: grid;
+    animation: open 0.2s ease;
+}
+
+.catalogue-list {
+    display: none;
+    margin-left: 100px;
 }
 
 .catalogue-title {
@@ -161,13 +242,13 @@ html {
 .catalogue-btn-0 {
     position: absolute;
     top: 60px;
-    right: 158px;
+    right: 155px;
 }
 
 .catalogue-btn-1 {
     position: absolute;
     top: 150px;
-    right: 180px;
+    right: 178px;
 }
 
 .catalogue-btn-2 {
@@ -179,7 +260,7 @@ html {
 .catalogue-btn-3 {
     position: absolute;
     top: 340px;
-    right: 188px;
+    right: 192px;
 }
 
 .catalogue-btn-5 {
@@ -201,15 +282,27 @@ html {
 }
 
 .catalogue-image__btn.active p{
-    font-size: 24px;
+    font-size: 20px;
     color: #303030;
     font-weight: 600;
+    animation: open 0.2s ease;
 }
 
 .catalogue-image__btn.active span {
     width: 20px;
     height: 20px;
     box-shadow: 0px 0px 0px 10px #fabe0a;
+    animation: open 0.2s ease;
+    -webkit-animation: open 0.2s ease;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .catalogue-order-link {
@@ -336,11 +429,29 @@ html {
 
 .why-element-img {
     object-fit: cover;
-    width: 50px;
+    width: 45px;
     position: absolute;
     z-index: 1;
-    top: -30px;
-    left: 38px;
+    top: -32px;
+    left: 42px;
+}
+
+.why-item .why-element-img.second {
+    width: 30px;
+    left: 49px;
+    top: -27;
+}
+
+.why-item .why-element-img.third {
+    width: 39px;
+    left: 45px;
+    top: -27;
+}
+
+.why-item .why-element-img.fourth {
+    width: 39px;
+    left: 45px;
+    top: -15;
 }
 
 .why-text {
@@ -377,12 +488,16 @@ html {
     background-color: #05285a;
 }
 
+.questions form input {
+    border-bottom: 0.5px solid #fafafa;
+}
+
 .questions-form-link {
     background-color: #fabe0a;
 }
 
 .questions-img {
-    width: 750px;
+  width: 750px;
 }
 
 .contact-list {
@@ -404,3 +519,11 @@ html {
 .contact-form-link {
     background-color: #fabe0a;
 }
+
+.catalogue .second {
+    display: none;
+} 
+
+.catalogue .third {
+    display: none;
+} 
