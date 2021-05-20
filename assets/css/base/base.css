@@ -505,6 +505,33 @@ html {
     align-items: center;
 }
 
+.swiper-wrapper .second li:nth-child(2n) img{
+    width: 110px;
+}
+
+.swiper-wrapper .second li:nth-child(3n) img{
+    padding-bottom: 20px;
+}
+
+.swiper-wrapper .third li:nth-child(1n) img{
+    padding-top: 10px;
+}
+
+.swiper-wrapper .third li:nth-child(2n) img{
+    width: 90px !important;
+    padding-bottom: 15px;
+}
+
+.swiper-wrapper .third li:nth-child(3n) img{
+    width: 90px !important;
+    padding-bottom: 10px;
+}
+
+.swiper-wrapper .third li:nth-child(4n) img{
+    width: 150px !important;
+    padding-top: 30px;
+}
+
 .swiper-pagination-bullet-active {
     background-color: #303030;
 }
