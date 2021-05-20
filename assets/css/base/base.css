@@ -513,6 +513,10 @@ html {
     padding-bottom: 20px;
 }
 
+.swiper-wrapper .third ul {
+    height: 100px;
+}
+
 .swiper-wrapper .third li:nth-child(1n) img{
     padding-top: 10px;
 }
