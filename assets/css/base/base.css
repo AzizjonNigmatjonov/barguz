@@ -42,11 +42,12 @@ html {
 
 .main-social-links {
     position: absolute;
-    bottom: -160px;
+    bottom: -140px;
 }
 
 .main .main-text {
     color: #303030;
+    font-size: 40px;
 }
 
 .main .main-subtext {
@@ -114,6 +115,9 @@ html {
     animation: open 0.2s ease;
 }
 
+.main .container {
+    overflow-y: unset;
+}
 
 .main-line {
     width: 520px;
@@ -125,6 +129,11 @@ html {
     transform: rotate(-15deg);
     position: relative;
     right: 25px;
+    top: -50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .main-line-break-1 {
@@ -149,7 +158,7 @@ html {
 
 .main-image__btn-circle {
     background-color: #05285a;
-    box-shadow: 0px 0px 0px 5px #fabe0a;
+    box-shadow: 0px 0px 0px 5px #fabe0a54;
 }
 
 .main-btn-1 {
@@ -180,6 +189,10 @@ html {
     right: 417px;
 }
 
+/* .main-image__btn.active .main-btn-2 {
+    right: 400px;
+} */
+
 .main-image__btn.active span {
     width: 20px;
     height: 20px;
@@ -190,6 +203,23 @@ html {
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
     animation: open 0.2s ease;
+    -webkit-animation: open 0.2s ease;
+}
+
+.main-btn-1.active {
+    right: 464px;
+}
+
+.main-btn-2.active {
+    right: 504px;
+}
+
+.main-btn-3.active {
+    right: 487px;
+}
+
+.main-btn-4.active {
+    right: 404px;
 }
 
 .main-image__btn.active p {
@@ -223,6 +253,8 @@ html {
 
 .catalogue-text {
     color: #303030;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .catalogue-slider-line {
@@ -245,10 +277,18 @@ html {
     right: 155px;
 }
 
+.catalogue-btn-0.active {
+    right: 153.4px;
+}
+
 .catalogue-btn-1 {
     position: absolute;
     top: 150px;
     right: 178px;
+}
+
+.catalogue-btn-1.active {
+    right: 177px;
 }
 
 .catalogue-btn-2 {
@@ -257,10 +297,18 @@ html {
     right: 190px;
 }
 
+.catalogue-btn-2.active {
+    right: 187px;
+}
+
 .catalogue-btn-3 {
     position: absolute;
     top: 340px;
     right: 192px;
+}
+
+.catalogue-btn-3.active {
+    right: 188px;
 }
 
 .catalogue-btn-5 {
@@ -269,12 +317,19 @@ html {
     right: 183px;
 }
 
+.catalogue-btn-5.active {
+    right: 179px;
+}
+
 .catalogue-btn-6 {
     position: absolute;
     top: 550px;
     right: 160px;
 }
 
+.catalogue-btn-6.active {
+    right: 156px;
+}
 
 .catalogue-image__btn-circle {
     background-color: #05285a;
@@ -325,39 +380,16 @@ html {
 
 .order-list {
     padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
 }
 
 .order-link {
     width: 200px;
     height: 150px;
     position: relative;
-}
-
-.order-link::after {
-    content: '';
-    background-image: url('../../images/right.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    background-size: cover;
-    width: 10px;
-    height: 17px;
-    right: 20px;
-    top: 25px;
-    -webkit-animation: slide 0.2s ease 1 forwards;
-}
-
-.order-link:hover::after {
-    transition: 0.2s;
-    transform: translateX(15px);
-    -webkit-transform: translateX(15px);
-    -moz-transform: translateX(15px);
-    -ms-transform: translateX(15px);
-    -o-transform: translateX(15px);
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
 }
 
 .order-img {
@@ -444,13 +476,13 @@ html {
 
 .why-item .why-element-img.third {
     width: 39px;
-    left: 45px;
+    left: 43.5px;
     top: -27;
 }
 
 .why-item .why-element-img.fourth {
     width: 39px;
-    left: 45px;
+    left: 44.5px;
     top: -15;
 }
 
@@ -467,6 +499,29 @@ html {
     line-height: 15px;
 }
 
+.swiper-wrapper {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #303030;
+}
+
+.swiper-button-prev::after {
+    fill: black;
+}
+
+.swiper-slide {
+    width: 800px;
+    height: 100px;
+}
+
+.brend-list {
+    margin: 0 auto;
+}
+
 .brend-title {
     color: #303030;
     margin-bottom: 80px;
@@ -474,10 +529,6 @@ html {
 
 .brend-item:nth-child(2n) img{
     width: 150px;
-}
-
-.brend-item:nth-child(3n) img{
-    width: 260px;
 }
 
 .brend-img {

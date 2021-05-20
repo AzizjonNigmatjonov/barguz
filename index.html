@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base/base.css">
     <link rel="stylesheet" href="./assets/css/responsive/responsive.css">
@@ -63,19 +65,19 @@
     
     <!-- main section -->
     <main class="main">
-        <div class="container">
+        <div class="container pt-8">
             <ul class="main-list flex justify-between items-center">
                 <li class="main-text-side">
                     <p class="main-text text-5xl font-bold">
                         Спецтехники <br>
                         для сложных задач<span class="main-text__dot"></span>
                     </p>
-                    <p class="main-subtext text-md w-3/5 leading-4 pt-8 pb-12">
+                    <p class="main-subtext text-md w-3/5 leading-4 pt-8 pb-12 leading-5">
                         Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла», написанного 
                         в 45 году до н. э. на латинском языке 
                     </p>
-                    <a class="main-more-btn text-md py-2 px-5 rounded inline-block font-semibold" href="#">
+                    <a class="main-more-btn text-md py-1 px-5 rounded-sm inline-block font-semibold" href="#">
                         Каталог
                     </a>
                     <div class="main-social-links flex justify-between w-24">
@@ -98,7 +100,7 @@
                                     <p id="mainImageBtn1" class="cursor-pointer main-image-text text-md text-gray-500">Автокраны</p>
                                     <span class="main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
                                 </div>
-                                <div id="mainImgWrapper2"  class="main-image__btn main-btn-2 flex items-center">
+                                <div id="mainImgWrapper2" class="main-image__btn main-btn-2 flex items-center">
                                     <p id="mainImageBtn2"  class="cursor-pointer main-image-text text-md text-gray-500">Бульдозеры</p>
                                     <span class="main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
                                 </div>
@@ -133,12 +135,12 @@
     </main>
     
     <section class="company" id="компании">
-        <div class="container pt-44">
+        <div class="container pt-24">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="company-title text-2xl font-bold mb-lg text-3xl">О компании</h2>
+            <h2 class="company-title text-2xl font-bold pb-8 text-3xl">О компании</h2>
             <ul class="company-list flex items-center justify-center">
                 <li class="company-item w-1/3 text-sm text-gray-900">
-                    <p class="company-text"><span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги. <br>
+                    <p class="company-text leading-6"><span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги. <br><br>
                         <span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги.</p>
                     </li>
                     <li class="company-item w-2/4 ml-lg">
@@ -153,7 +155,7 @@
                 <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
                 <h2 class="catalogue-title text-2xl font-bold mb-24 text-3xl">Каталог</h2>
                 <div class="flex justify-start">
-                    <ul id="tools" class="catalogue-list grid gap-12 grid-cols-3 pt-20 gap-x-28">
+                    <ul id="tools" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-28">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -267,7 +269,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>         
-                    <ul id="ekskavator"  class="catalogue-list grid gap-12  grid-cols-3 pt-20 gap-x-28">
+                    <ul id="ekskavator"  class="lg:gap-x-8 xl:gap-x-28 catalogue-list grid gap-12  grid-cols-3 pt-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
@@ -414,7 +416,7 @@
             </div>
         </div>
         <div class="flex justify-center pb-24">
-            <a href="#" class="catalogue-order-link py-1 px-5 rounded font-semibold">Заказать</a>
+            <a href="#" class="catalogue-order-link py-1 px-5 rounded-sm font-semibold">Заказать</a>
         </div>
     </div>
 </section>
@@ -425,7 +427,7 @@
         <h2 class="order-title">
             Как заказать технику?
         </h2>
-        <ul class="order-list flex justify-center items-center">
+        <ul class="order-list">
             <li class="order-item">
                 <a href="#" class="order-link flex flex-col items-center">
                     <img class="order-img" src="./assets/images/choice.png" alt="photo">
@@ -476,7 +478,7 @@
                     <img class="why-img" src="./assets/images/volvo-sd135b,5fd190c5.png" alt="photo">
                 </div>
                 <div class="why-elements">
-                    <ul class="why-list grid grid-cols-2 gap-12">
+                    <ul class="why-list grid xl:grid-cols-2 lg\:grid-cols-1 gap-12">
                         <li class="why-item">
                             <img class="why-element-img" src="/assets/images/why-buld.png" alt="photo">
                             <span></span>
@@ -516,43 +518,98 @@
     </section>
     
     <section class="brend">
-        <div class="container pt-20 pb-4">
+        <div class="container swiper-container pt-20">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="brend-title text-2xl font-bold mb-24 text-3xl">Бренды нашей техники</h2>
-            <ul class="flex justify-center items-center">
-                <li class="brend-item">
-                    <a href="#" class="brend-link">
-                        <img class="brend-img" src="./assets/images/hitachi.png" alt="photo">
-                    </a>
-                </li>
-                <li class="brend-item mx-lg">
-                    <a href="#" class="brend-link">
-                        <img class="brend-img" src="./assets/images/cat.png" alt="photo">
-                    </a>
-                </li>
-                <li class="brend-item">
-                    <a href="#" class="brend-link">
-                        <img class="brend-img" src="./assets/images/voggle.png" alt="photo">
-                    </a>
-                </li>
-                <li class="brend-item ml-lg">
-                    <a href="#" class="brend-link">
-                        <img class="brend-img" src="./assets/images/m.png" alt="photo">
-                    </a>
-                </li>
-            </ul>
-            <div class="dots flex items-center justify-center">
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
+            <h2 class="brend-title text-2xl font-bold text-3xl">Бренды нашей техники</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="swiper-container container mySwiper pb-8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="flex justify-between items-center w-2/3 brend-list">
+                        <li class="brend-item">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/hitachi.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item mx-lg">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/cat.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/10-k16ZzUUTTFNRGTVRVek5czT1RRM.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item ml-lg">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img mb-lg" src="./assets/images/m.png" alt="photo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="flex justify-between items-center w-2/3 brend-list">
+                        <li class="brend-item">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/Zoomlion-Heavy-Industry.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item mx-lg">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/Yuchai_logo_red.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/sinotruk353x146.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item ml-lg">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img mb-lg" src="./assets/images/9b3f2c294dcb648977fbabacc92b678b.png" alt="photo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="flex justify-between items-center w-2/3 brend-list">
+                        <li class="brend-item">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/0_winter.jpg" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item mx-lg">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/01518_00.png" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img" src="./assets/images/unnamed.jpg" alt="photo">
+                            </a>
+                        </li>
+                        <li class="brend-item ml-lg">
+                            <a href="#" class="brend-link">
+                                <img class="brend-img mb-lg" src="./assets/images/af36a8e7988d29a051f3aced25454f4e.png" alt="photo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
         </div>
     </section>
     
     <!-- questions section -->
     <section class="questions pt-14">
         <div class="container flex items-center justify-center py-8">
-            <form action="/" method="POST" class="w-1/4 p-9 rounded-xl">
+            <form action="/" method="POST" class="w-1/4 p-9 rounded-md">
                 <h1 class="visually-hidden"></h1>
                 <h2 class="font-bold text-2xl text-gray-50 mb-lg mt-sm text-3xl">Есть вопросы?</h2>
                 <label for="" class="">
@@ -562,7 +619,7 @@
                     <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="tel" placeholder="Телефон" required>
                 </label>
                 <div class="flex justify-center items-center mt-lg flex-col mb-md">
-                    <a href="#" class="questions-form-link py-2 px-7 rounded font-semibold text-sm inline-block mx-auto">Заказать</a>
+                    <a href="#" class="questions-form-link py-2 px-7 rounded-sm font-semibold text-sm inline-block mx-auto">Заказать</a>
                     <p class="text-sm text-gray-400 mt-lg">Все услуги лицензированны</p>
                 </div>
             </form>
@@ -574,32 +631,32 @@
     
     
     <section class="contact" id="Контакты">
-        <div class="container pb-28 pt-8">
+        <div class="container pb-28 pt-16">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
             <h2 class="contact-title text-2xl font-bold text-3xl">Контакты</h2>
-            <div class="contact-social flex items-center justify-center pt-20">
+            <div class="contact-social flex items-center justify-center pt-16">
                 <ul class="contact-list">
                     <li class="flex items-center">
-                        <img class="w-3 mr-lg" src="./assets/images/pin (1).png" alt="photo">
+                        <img class="w-4 mr-lg" src="./assets/images/pin (1).png" alt="photo">
                         <a href="#" class="text-gray-600">г. Ташкент  Мирабадский район </a>
                     </li>
                     <li class="flex items-center py-6">
-                        <img class="w-4 mr-lg" src="./assets/images/phone-call.png" alt="photo">
+                        <img class="w-5 mr-lg" src="./assets/images/phone-call.png" alt="photo">
                         <a href="#" class="text-gray-600">99 565 55 55 </a>
                     </li>
                     <li class="flex items-center">
-                        <img class="w-4 mr-lg" src="./assets/images/email (1).png" alt="photo">
+                        <img class="w-5 mr-lg" src="./assets/images/email (1).png" alt="photo">
                         <a href="#" class="text-gray-600">barg@gmail.com </a>
                     </li>  
-                    <div class="contact-social-links flex justify-between items-center w-16">
+                    <div class="contact-social-links flex justify-between items-center w-20">
                         <a href="#" class="contact-social__facebook">
-                            <img class="w-2" src="./assets/images/facebook.svg" alt="Photo">
+                            <img class="w-3" src="./assets/images/facebook.svg" alt="Photo">
                         </a>
                         <a href="#" class="contact-social__facebook">
-                            <img class="w-4" src="./assets/images/telegram.svg" alt="Photo">
+                            <img class="w-5" src="./assets/images/telegram.svg" alt="Photo">
                         </a>
                         <a href="#" class="contact-social__facebook">
-                            <img class="w-4" src="./assets/images/instagram.svg" alt="Photo">
+                            <img class="w-5" src="./assets/images/instagram.svg" alt="Photo">
                         </a>
                     </div>
                 </ul>
@@ -651,12 +708,12 @@
             <p class="text-gray-300 text-lg">Есть вопросы</p>
             <form class="mt-lg" action="/" method="">
                 <label for="">
-                    <input class="outline-none border-0 placeholder-gray-300 text-gray-700 px-3 py-1 outline-none bg-gray-50 font-normal rounded" type="text" placeholder="Имя">
+                    <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none bg-gray-50 font-normal rounded-sm" type="text" placeholder="Имя">
                 </label>
                 <label for="">
-                    <input class="outline-none border-0 placeholder-gray-300 text-gray-700 px-3 py-1 outline-none font-normal bg-gray-50 rounded mx-sm" type="tel" placeholder="Тел">
+                    <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none font-normal bg-gray-50 rounded-sm mx-sm" type="tel" placeholder="Тел">
                 </label>
-                <a class="contact-form-link py-1 px-4 rounded inline-block font-semibold" href="#">Заказать</a>
+                <a class="contact-form-link py-1 px-4 rounded-sm inline-block font-semibold" href="#">Заказать</a>
             </form>
             <div class="flex justify-between items-center w-24 mt-lg">
                 <a href="#" class="contact-social__facebook">
@@ -696,6 +753,9 @@
     </footer>
     
     
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
     
 </body>

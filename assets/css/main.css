@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
@@ -11240,7 +11240,7 @@ video {
 }
 
 .font-body{
-  font-family: Nunito;
+  font-family: Montserrat;
 }
 
 .font-thin{
@@ -40515,7 +40515,7 @@ video {
   }
 
   .sm\:font-body{
-    font-family: Nunito;
+    font-family: Montserrat;
   }
 
   .sm\:font-thin{
@@ -69620,7 +69620,7 @@ video {
   }
 
   .md\:font-body{
-    font-family: Nunito;
+    font-family: Montserrat;
   }
 
   .md\:font-thin{
@@ -98725,7 +98725,7 @@ video {
   }
 
   .lg\:font-body{
-    font-family: Nunito;
+    font-family: Montserrat;
   }
 
   .lg\:font-thin{
@@ -127830,7 +127830,7 @@ video {
   }
 
   .xl\:font-body{
-    font-family: Nunito;
+    font-family: Montserrat;
   }
 
   .xl\:font-thin{
@@ -156935,7 +156935,7 @@ video {
   }
 
   .\32xl\:font-body{
-    font-family: Nunito;
+    font-family: Montserrat;
   }
 
   .\32xl\:font-thin{
