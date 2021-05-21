@@ -254,6 +254,9 @@
     .main-title {
         width: 400px;
     }
+    .company .container {
+        padding-top: 0px;
+    }
 }
 
 @media (max-width: 640px) {

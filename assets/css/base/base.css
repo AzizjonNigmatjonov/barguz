@@ -299,7 +299,7 @@ html {
 }
 
 .company .container {
-    padding-top: 0;
+    padding-top: 70px;
 }
 
 .company-list .company-item:nth-child(2n) {
