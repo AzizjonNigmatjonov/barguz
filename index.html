@@ -11,7 +11,7 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -61,10 +61,13 @@
                 <button id="barBtn" class="nav-bar focus:outline-none border-none cursor-pointer lg:hidden">
                     <img class="nav-bar__img w-5" src="./assets/images/menu.svg" alt="Bar image">
                 </button>
+                <button id="barCloseBtn" class="nav-bar focus:outline-none border-none cursor-pointer">
+                    <img src="./assets/images/cancel.png" alt="photo" width="15px" height="15px">
+                </button>
             </nav>
         </div>
     </header>
-
+    
     <!-- main section -->
     <main class="main">
         <div class="container pt-8">
@@ -135,6 +138,21 @@
             </ul>
         </div>
     </main>
+
+    <div class="main-hidden-image">
+        <div class="swiper-container mySwiper2 swiper-container-2">
+            <div class="swiper-wrapper swiper-wrapper-2">
+                <div class="swiper-slide">
+                    <img src="./assets/images/soma.png" alt="Photo absolute" width="100%">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo absolute" width="100%">
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/company-img.png" alt="Photo absolute" width="100%"></div>
+                <div class="swiper-slide"><img src="./assets/images/yachar.png" alt="Photo absolute" width="100%"></div>
+            </div>
+        </div>
+    </div>
     
     <section class="company" id="компании">
         <div class="container pt-24">
@@ -157,7 +175,7 @@
                 <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
                 <h2 class="catalogue-title text-2xl font-bold mb-24 text-3xl">Каталог</h2>
                 <div class="flex justify-start">
-                    <ul id="tools" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-20">
+                    <ul id="tools" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -195,7 +213,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>
-                    <ul id="peregruz" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-20">
+                    <ul id="peregruz" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -233,7 +251,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>  
-                    <ul id="cbuldozer" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-20 active">
+                    <ul id="cbuldozer" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20 active">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -309,7 +327,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>
-                    <ul id="combine" class="catalogue-list grid gap-12  grid-cols-3 pt-20 gap-x-28">
+                    <ul id="combine" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
                             <p class="catalogue-text text-center text-lg">YER YANCHAR</p>
@@ -347,7 +365,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>    
-                    <ul id="katki" class="catalogue-list grid gap-12  grid-cols-3 pt-20 gap-x-28">
+                    <ul id="katki" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
                             <p class="catalogue-text text-center text-lg">YER YANCHAR</p>

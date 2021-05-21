@@ -47,11 +47,34 @@ const catalogImgWrapper6 = document.querySelector('.catalogue-btn-6 ');
 const navBtn = document.getElementById('barBtn');
 // get navbar list
 const navList = document.getElementById('headerNavList');
-
+// get nav close btn
+const navCloseBtn = document.getElementById('barCloseBtn');
+navCloseBtn.style.display = 'none';
 // open navbar
 navBtn.addEventListener('click', e => {
     navList.classList.add('active');
+    navCloseBtn.style.display = 'block';
+    navBtn.style.display = 'none';
 })
+
+navCloseBtn.addEventListener('click', e => {
+    navList.classList.remove('active');
+    navCloseBtn.style.display = 'none';
+    navBtn.style.display = 'block';
+})
+
+const mainLine = document.querySelector('.main-line')
+
+window.addEventListener('click', e => {
+    if (e.target == mainLine) {
+        navList.classList.remove('active')
+        navCloseBtn.style.display = 'none';
+        navBtn.style.display = 'block';
+    } else {
+        
+    }
+    console.log(e.target);
+});
 
 catalogChangeBtns.forEach(element => {
     element.addEventListener('click', e => {
@@ -175,3 +198,5 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+var swiper = new Swiper(".mySwiper2", {});
