@@ -43,7 +43,15 @@ const catalogImgWrapper3 = document.querySelector('.catalogue-btn-2');
 const catalogImgWrapper4 = document.querySelector('.catalogue-btn-3');
 const catalogImgWrapper5 = document.querySelector('.catalogue-btn-5');
 const catalogImgWrapper6 = document.querySelector('.catalogue-btn-6 ');
+// get navbar menu btn
+const navBtn = document.getElementById('barBtn');
+// get navbar list
+const navList = document.getElementById('headerNavList');
 
+// open navbar
+navBtn.addEventListener('click', e => {
+    navList.classList.add('active');
+})
 
 catalogChangeBtns.forEach(element => {
     element.addEventListener('click', e => {
@@ -125,28 +133,28 @@ catalogChangeBtns.forEach(element => {
 // changa main image function
 mainImgChangeBtn.forEach(element => {
     element.addEventListener('click', e => {
-        if (e.target.id == 'mainImageBtn1') {
+        if (e.target.id == 'mainImageBtn1' || e.target.id == 'mainImgCircle1' || e.target.id == 'mainImgWrapper1') {
             mainFirstImg.classList.add('first');
             mainImgWrapper1.classList.add('active')
         } else {
             mainFirstImg.classList.remove('first');
             mainImgWrapper1.classList.remove('active');
         } 
-        if (e.target.id == 'mainImageBtn2') {
+        if (e.target.id == 'mainImageBtn2' || e.target.id == 'mainImgCircle2' || e.target.id == 'mainImgWrapper2') {
             mainSecondImg.classList.add('second')
             mainImgWrapper2.classList.add('active');
         } else {
             mainSecondImg.classList.remove('second');
             mainImgWrapper2.classList.remove('active');
         }
-        if (e.target.id == 'mainImageBtn3') {
+        if (e.target.id == 'mainImageBtn3' || e.target.id == "mainImgCircle3" || e.target.id == 'mainImgWrapper3') {
             mainThirdImg.classList.add('third');
             mainImgWrapper3.classList.add('active');
         } else {
             mainThirdImg.classList.remove('third')
             mainImgWrapper3.classList.remove('active');
         }
-        if (e.target.id == 'mainImageBtn4') {
+        if (e.target.id == 'mainImageBtn4' || e.target.id == 'mainImgCircle4' || e.target.id == 'mainImgWrapper4') {
             mainFourImg.classList.add('four');
             mainImgWrapper4.classList.add('active');
         } else {

@@ -11,6 +11,10 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>Barg.uz</title>
 </head>
@@ -18,12 +22,12 @@
     
     <!-- navigation section -->
     <header id="Главная">
-        <nav class="nav flex justify-center" role="navigation">
-            <div class="container flex justify-between items-center py-6 pt-8">
+        <div class="container">
+            <nav class="nav flex justify-center flex justify-between items-center py-6 pt-8" role="navigation">
                 <a href="#" class="nav-brand">
                     <img class="nav-brand-img" src="./assets/images/logo.svg" alt="Navbar Brand Image" width="115px">
                 </a>
-                <ul class="text-sm nav-list flex align-middle invisible md:visible">
+                <ul id="headerNavList" class="text-sm nav-list flex align-middle">
                     <li class="nav-item lg:px-5 md:px-2">
                         <a class="nav-link my-auto text-lg text-gray-900" href="#Главная">
                             Главная
@@ -50,28 +54,26 @@
                         </a>
                     </li>
                 </ul>
-                <a class="nav-contact flex items-center invisible md:visible" href="#">
+                <a class="nav-contact flex items-center invisible lg:visible" href="#">
                     <img class="nav-contact__img w-4 h-4" src="./assets/images/phone-call.png" alt="Phone png image">
                     <p class="nav-contact__text pl-2">99 909 00 99</p>            
                 </a>
-                <button id="barBtn" class="nav-bar focus:outline-none border-none cursor-pointer md:hidden">
-                    <img class="nav-bar__img w-5" src="./img/menu.svg" alt="Bar image">
+                <button id="barBtn" class="nav-bar focus:outline-none border-none cursor-pointer lg:hidden">
+                    <img class="nav-bar__img w-5" src="./assets/images/menu.svg" alt="Bar image">
                 </button>
-                
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    
-    
+
     <!-- main section -->
     <main class="main">
         <div class="container pt-8">
             <ul class="main-list flex justify-between items-center">
                 <li class="main-text-side">
-                    <p class="main-text text-5xl font-bold">
+                    <h1 class="main-title text-5xl font-bold">
                         Спецтехники <br>
                         для сложных задач<span class="main-text__dot"></span>
-                    </p>
+                    </h1>
                     <p class="main-subtext text-md w-3/5 leading-4 pt-8 pb-12 leading-5">
                         Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла», написанного 
@@ -98,19 +100,19 @@
                             <div class="main-line">
                                 <div id="mainImgWrapper1" class="main-image__btn main-btn-1 flex items-center">
                                     <p id="mainImageBtn1" class="cursor-pointer main-image-text text-md text-gray-500">Автокраны</p>
-                                    <span class="main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                    <span id="mainImgCircle1" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
                                 </div>
                                 <div id="mainImgWrapper2" class="main-image__btn main-btn-2 flex items-center">
                                     <p id="mainImageBtn2"  class="cursor-pointer main-image-text text-md text-gray-500">Бульдозеры</p>
-                                    <span class="main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                    <span id="mainImgCircle2" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
                                 </div>
                                 <div id="mainImgWrapper3"  class="main-image__btn active main-btn-3 flex items-center">
                                     <p id="mainImageBtn3" class="cursor-pointer main-image-text text-md text-gray-500">Перегрузчик</p>
-                                    <span class="main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                    <span id="mainImgCircle3" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
                                 </div>
                                 <div id="mainImgWrapper4"  class="main-image__btn main-btn-4 flex items-center">
                                     <p id="mainImageBtn4" class="cursor-pointer main-image-text text-md text-gray-500">Экскаваторы</p>
-                                    <span class="main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                    <span id="mainImgCircle4" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
                                 </div>
                                 <div id="soma" class="main-img" data-target="mainImageBtn1">
                                     <img src="./assets/images/soma.png" alt="Photo absolute" width="100%">
@@ -138,13 +140,13 @@
         <div class="container pt-24">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
             <h2 class="company-title text-2xl font-bold pb-8 text-3xl">О компании</h2>
-            <ul class="company-list flex items-center justify-center">
+            <ul class="company-list flex items-center justify-start">
                 <li class="company-item w-1/3 text-sm text-gray-900">
                     <p class="company-text leading-6"><span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги. <br><br>
                         <span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги.</p>
                     </li>
-                    <li class="company-item w-2/4 ml-lg">
-                        <img class="company-img w-full" src="./assets/images/company-img.png" alt="photo">
+                    <li class="company-item">
+                        <img class="company-img" src="./assets/images/hd325_8_model_photo(ebc).svg" alt="photo">
                     </li>
                 </ul>
             </div>
@@ -155,7 +157,7 @@
                 <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
                 <h2 class="catalogue-title text-2xl font-bold mb-24 text-3xl">Каталог</h2>
                 <div class="flex justify-start">
-                    <ul id="tools" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-28">
+                    <ul id="tools" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -193,7 +195,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>
-                    <ul id="peregruz" class="catalogue-list grid gap-12  grid-cols-3 pt-20 gap-x-28">
+                    <ul id="peregruz" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -231,7 +233,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>  
-                    <ul id="cbuldozer" class="catalogue-list active grid gap-12  grid-cols-3 pt-20 gap-x-28">
+                    <ul id="cbuldozer" class="catalogue-list grid gap-12 grid-cols-3 pt-20 lg:gap-x-8 xl:gap-x-20 active">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
                             <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
@@ -269,7 +271,7 @@
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
                         </li>
                     </ul>         
-                    <ul id="ekskavator"  class="lg:gap-x-8 xl:gap-x-28 catalogue-list grid gap-12  grid-cols-3 pt-20">
+                    <ul id="ekskavator"  class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
                         <li class="catalogue-item flex items-center justify-center flex-col">
                             <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
                             <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
@@ -415,7 +417,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center pb-24">
+        <div class="flex justify-center pb-10 sm:pb-24">
             <a href="#" class="catalogue-order-link py-1 px-5 rounded-sm font-semibold">Заказать</a>
         </div>
     </div>
@@ -472,13 +474,13 @@
     <section class="why">
         <div class="container">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="why-title text-2xl font-bold mb-24 pb-16 text-3xl">Почему выбирают нас?</h2>
-            <div class="flex justify-center items-center">
+            <h2 class="why-title text-2xl font-bold mb-24 pb-4 sm:pb-16 text-3xl">Почему выбирают нас?</h2>
+            <div class="why-separator flex justify-center items-center">
                 <div class="why-image">
                     <img class="why-img" src="./assets/images/volvo-sd135b,5fd190c5.png" alt="photo">
                 </div>
                 <div class="why-elements">
-                    <ul class="why-list grid xl:grid-cols-2 lg\:grid-cols-1 gap-12">
+                    <ul class="why-list grid grid-cols-1 sm:grid-cols-2 gap-12">
                         <li class="why-item">
                             <img class="why-element-img" src="/assets/images/why-buld.png" alt="photo">
                             <span></span>
@@ -518,12 +520,12 @@
     </section>
     
     <section class="brend">
-        <div class="container swiper-container pt-20">
+        <div class="container pt-20">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
             <h2 class="brend-title text-2xl font-bold text-3xl">Бренды нашей техники</h2>
         </div>
     </section>
-
+    
     <section>
         <div class="swiper-container container mySwiper pb-8">
             <div class="swiper-wrapper">
@@ -602,161 +604,160 @@
             </div>
             <div class="swiper-pagination"></div>
             <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-        </div>
-    </section>
-    
-    <!-- questions section -->
-    <section class="questions pt-14">
-        <div class="container flex items-center justify-center py-8">
-            <form action="/" method="POST" class="w-1/4 p-9 rounded-md">
-                <h1 class="visually-hidden"></h1>
-                <h2 class="font-bold text-2xl text-gray-50 mb-lg mt-sm text-3xl">Есть вопросы?</h2>
-                <label for="" class="">
-                    <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="text" placeholder="Ваше имя" required>
-                </label>
-                <label for="">
-                    <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="tel" placeholder="Телефон" required>
-                </label>
-                <div class="flex justify-center items-center mt-lg flex-col mb-md">
-                    <a href="#" class="questions-form-link py-2 px-7 rounded-sm font-semibold text-sm inline-block mx-auto">Заказать</a>
-                    <p class="text-sm text-gray-400 mt-lg">Все услуги лицензированны</p>
-                </div>
-            </form>
-            <div class="questions-img inline-block pl-28">
-                <img class="w-full" src="./assets/images/Прямоугольник 24.png" alt="photo">
+                <div class="swiper-button-prev"></div> -->
             </div>
-        </div>
-    </section>
-    
-    
-    <section class="contact" id="Контакты">
-        <div class="container pb-28 pt-16">
-            <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="contact-title text-2xl font-bold text-3xl">Контакты</h2>
-            <div class="contact-social flex items-center justify-center pt-16">
-                <ul class="contact-list">
-                    <li class="flex items-center">
-                        <img class="w-4 mr-lg" src="./assets/images/pin (1).png" alt="photo">
-                        <a href="#" class="text-gray-600">г. Ташкент  Мирабадский район </a>
-                    </li>
-                    <li class="flex items-center py-6">
-                        <img class="w-5 mr-lg" src="./assets/images/phone-call.png" alt="photo">
-                        <a href="#" class="text-gray-600">99 565 55 55 </a>
-                    </li>
-                    <li class="flex items-center">
-                        <img class="w-5 mr-lg" src="./assets/images/email (1).png" alt="photo">
-                        <a href="#" class="text-gray-600">barg@gmail.com </a>
-                    </li>  
-                    <div class="contact-social-links flex justify-between items-center w-20">
-                        <a href="#" class="contact-social__facebook">
-                            <img class="w-3" src="./assets/images/facebook.svg" alt="Photo">
-                        </a>
-                        <a href="#" class="contact-social__facebook">
-                            <img class="w-5" src="./assets/images/telegram.svg" alt="Photo">
-                        </a>
-                        <a href="#" class="contact-social__facebook">
-                            <img class="w-5" src="./assets/images/instagram.svg" alt="Photo">
-                        </a>
+        </section>
+        
+        <!-- questions section -->
+        <section class="questions pt-14">
+            <div class="container flex items-center justify-center py-8 flex-wrap-reverse">
+                <form action="/" method="POST" class="w-1/4 p-9 rounded-md">
+                    <h1 class="visually-hidden"></h1>
+                    <h2 class="font-bold text-2xl text-gray-50 mb-lg mt-sm text-3xl">Есть вопросы?</h2>
+                    <label for="" class="">
+                        <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="text" placeholder="Ваше имя" required>
+                    </label>
+                    <label for="">
+                        <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="tel" placeholder="Телефон" required>
+                    </label>
+                    <div class="flex justify-center items-center mt-lg flex-col mb-md">
+                        <a href="#" class="questions-form-link py-2 px-7 rounded-sm font-semibold text-sm inline-block mx-auto">Заказать</a>
+                        <p class="text-sm text-gray-400 mt-lg">Все услуги лицензированны</p>
                     </div>
-                </ul>
-                <div class="w-1/3 rounded">
-                    <iframe class="rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4438038781886!2d69.2828901152867!3d41.29920797927233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2616f94705%3A0x720b816eb8acffcb!2sMountain%20uz!5e0!3m2!1sru!2s!4v1621415363370!5m2!1sru!2s" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </form>
+                <div class="questions-img inline-block xl:pl-28">
+                    <img class="w-full" src="./assets/images/Прямоугольник 24.png" alt="photo">
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
-    <footer class="footer">
-        <div class="container flex items-center justify-center flex-col py-16">
-            <h1 class="visually-hidden">Lorem ipsum dolor sit.</h1>
-            <p class="footer-brand">
-                <img src="./assets/images/barg.png" alt="photo">
-            </p>
-            <nav class="flex justify-center items-center py-6" role="navigation">
-                <div class="">
-                    <ul class="text-sm flex align-middle invisible md:visible justify-center items-center">
-                        <li class="lg:px-5 md:px-2">
-                            <a class="text-gray-300" href="#">
-                                Главная
-                            </a>
+        </section>
+        
+        
+        <section class="contact" id="Контакты">
+            <div class="container pb-28 pt-16">
+                <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
+                <h2 class="contact-title text-2xl font-bold text-3xl">Контакты</h2>
+                <div class="contact-social flex items-center justify-center pt-16">
+                    <ul class="contact-list">
+                        <li class="flex items-center">
+                            <img class="w-4 mr-lg" src="./assets/images/pin (1).png" alt="photo">
+                            <a href="#" class="text-gray-600">г. Ташкент  Мирабадский район </a>
                         </li>
-                        <li class="lg:px-5 md:px-3">
-                            <a class="text-gray-300" href="#">
-                                О компании
-                            </a>
+                        <li class="flex items-center py-6">
+                            <img class="w-5 mr-lg" src="./assets/images/phone-call.png" alt="photo">
+                            <a href="#" class="text-gray-600">99 565 55 55 </a>
                         </li>
-                        <li class="lg:px-5 md:px-3">
-                            <a class="text-gray-300" href="#">
-                                Каталог
+                        <li class="flex items-center">
+                            <img class="w-5 mr-lg" src="./assets/images/email (1).png" alt="photo">
+                            <a href="#" class="text-gray-600">barg@gmail.com </a>
+                        </li>  
+                        <div class="contact-social-links flex justify-between items-center w-20">
+                            <a href="#" class="contact-social__facebook">
+                                <img class="w-3" src="./assets/images/facebook.svg" alt="Photo">
                             </a>
-                        </li>
-                        <li class="lg:px-5 md:px-3">
-                            <a class="text-gray-300" href="#">
-                                Как заказать
+                            <a href="#" class="contact-social__facebook">
+                                <img class="w-5" src="./assets/images/telegram.svg" alt="Photo">
                             </a>
-                        </li>
-                        <li class="lg:px-5 md:px-3">
-                            <a class="text-gray-300" href="#">
-                                Контакты
+                            <a href="#" class="contact-social__facebook">
+                                <img class="w-5" src="./assets/images/instagram.svg" alt="Photo">
                             </a>
-                        </li>
+                        </div>
                     </ul>
+                    <div class="w-1/3 contact-map rounded-sm">
+                        <iframe class="rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4438038781886!2d69.2828901152867!3d41.29920797927233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2616f94705%3A0x720b816eb8acffcb!2sMountain%20uz!5e0!3m2!1sru!2s!4v1621415363370!5m2!1sru!2s" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
-            </nav>
-            <p class="text-gray-300 text-lg">Есть вопросы</p>
-            <form class="mt-lg" action="/" method="">
-                <label for="">
-                    <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none bg-gray-50 font-normal rounded-sm" type="text" placeholder="Имя">
-                </label>
-                <label for="">
-                    <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none font-normal bg-gray-50 rounded-sm mx-sm" type="tel" placeholder="Тел">
-                </label>
-                <a class="contact-form-link py-1 px-4 rounded-sm inline-block font-semibold" href="#">Заказать</a>
-            </form>
-            <div class="flex justify-between items-center w-24 mt-lg">
-                <a href="#" class="contact-social__facebook">
-                    <svg id="facebook-app-symbol" xmlns="http://www.w3.org/2000/svg" width="11.944" height="23.001" viewBox="0 0 11.944 23.001">
-                        <path id="f_1_" d="M45.043,23V12.51h3.52l.528-4.09H45.043V5.809c0-1.184.327-1.99,2.027-1.99h2.164V.16A29.34,29.34,0,0,0,46.08,0c-3.122,0-5.259,1.906-5.259,5.4V8.42H37.29v4.09h3.531V23Z" transform="translate(-37.29)" fill="#fabe0a"/>
-                    </svg>
-                    
-                </a>
-                <a href="#" class="contact-social__facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23.001" viewBox="0 0 26 23.001">
-                        <g id="XMLID_496_" transform="translate(0)">
-                            <path id="XMLID_497_" d="M.459,30.429,6.45,32.7l2.319,7.577a.7.7,0,0,0,1.12.343l3.339-2.766a.984.984,0,0,1,1.214-.034l6.023,4.443a.7.7,0,0,0,1.106-.434l4.412-21.565a.71.71,0,0,0-.946-.815L.452,29.087A.722.722,0,0,0,.459,30.429ZM8.4,31.492,20.1,24.165a.206.206,0,0,1,.246.328l-9.663,9.126a2.046,2.046,0,0,0-.621,1.218l-.329,2.478a.3.3,0,0,1-.591.043L7.88,32.839A1.207,1.207,0,0,1,8.4,31.492Z" transform="translate(0 -19.401)" fill="#fabe0a"/>
-                        </g>
-                    </svg>
-                </a>
-                <a href="#" class="contact-social__facebook">
-                    <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="23.001" height="23.001" viewBox="0 0 23.001 23.001">
-                        <g id="Сгруппировать_4" data-name="Сгруппировать 4">
-                            <g id="Сгруппировать_3" data-name="Сгруппировать 3">
-                                <path id="Контур_2" data-name="Контур 2" d="M16.319,0H6.681A6.689,6.689,0,0,0,0,6.681v9.638A6.689,6.689,0,0,0,6.681,23h9.638A6.689,6.689,0,0,0,23,16.319V6.681A6.689,6.689,0,0,0,16.319,0ZM21.2,16.319A4.89,4.89,0,0,1,16.319,21.2H6.681A4.89,4.89,0,0,1,1.8,16.319V6.681A4.89,4.89,0,0,1,6.681,1.8h9.638A4.89,4.89,0,0,1,21.2,6.681Z" fill="#fabe0a"/>
-                            </g>
-                        </g>
-                        <g id="Сгруппировать_6" data-name="Сгруппировать 6" transform="translate(5.301 5.301)">
-                            <g id="Сгруппировать_5" data-name="Сгруппировать 5">
-                                <path id="Контур_3" data-name="Контур 3" d="M124.2,118a6.2,6.2,0,1,0,6.2,6.2A6.206,6.206,0,0,0,124.2,118Zm0,10.6a4.4,4.4,0,1,1,4.4-4.4A4.408,4.408,0,0,1,124.2,128.6Z" transform="translate(-118 -118)" fill="#fabe0a"/>
-                            </g>
-                        </g>
-                        <g id="Сгруппировать_8" data-name="Сгруппировать 8" transform="translate(16.907 4.484)">
-                            <g id="Сгруппировать_7" data-name="Сгруппировать 7" transform="translate(0)">
-                                <ellipse id="Эллипс_1" data-name="Эллипс 1" cx="0.805" cy="0.805" rx="0.805" ry="0.805" fill="#fabe0a"/>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
             </div>
-        </div>
-    </footer>
-    
-    
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-    
-</body>
-</html>
+        </section>
+        
+        
+        <footer class="footer">
+            <div class="container flex items-center justify-center flex-col py-16">
+                <h1 class="visually-hidden">Lorem ipsum dolor sit.</h1>
+                <p class="footer-brand">
+                    <img src="./assets/images/barg.png" alt="photo">
+                </p>
+                <nav class="flex justify-center items-center py-6" role="navigation">
+                    <div class="">
+                        <ul class="text-sm flex align-middle invisible md:visible justify-center items-center">
+                            <li class="lg:px-5 md:px-2">
+                                <a class="text-gray-300" href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="lg:px-5 md:px-3">
+                                <a class="text-gray-300" href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="lg:px-5 md:px-3">
+                                <a class="text-gray-300" href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="lg:px-5 md:px-3">
+                                <a class="text-gray-300" href="#">
+                                    Как заказать
+                                </a>
+                            </li>
+                            <li class="lg:px-5 md:px-3">
+                                <a class="text-gray-300" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <p class="text-gray-300 text-lg">Есть вопросы</p>
+                <form class="mt-lg" action="/" method="">
+                    <label for="">
+                        <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none bg-gray-50 font-normal rounded-sm" type="text" placeholder="Имя">
+                    </label>
+                    <label for="">
+                        <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none font-normal bg-gray-50 rounded-sm mx-sm" type="tel" placeholder="Тел">
+                    </label>
+                    <a class="contact-form-link py-1 px-4 rounded-sm inline-block font-semibold" href="#">Заказать</a>
+                </form>
+                <div class="flex justify-between items-center w-24 mt-lg">
+                    <a href="#" class="contact-social__facebook">
+                        <svg id="facebook-app-symbol" xmlns="http://www.w3.org/2000/svg" width="11.944" height="23.001" viewBox="0 0 11.944 23.001">
+                            <path id="f_1_" d="M45.043,23V12.51h3.52l.528-4.09H45.043V5.809c0-1.184.327-1.99,2.027-1.99h2.164V.16A29.34,29.34,0,0,0,46.08,0c-3.122,0-5.259,1.906-5.259,5.4V8.42H37.29v4.09h3.531V23Z" transform="translate(-37.29)" fill="#fabe0a"/>
+                        </svg>
+                        
+                    </a>
+                    <a href="#" class="contact-social__facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23.001" viewBox="0 0 26 23.001">
+                            <g id="XMLID_496_" transform="translate(0)">
+                                <path id="XMLID_497_" d="M.459,30.429,6.45,32.7l2.319,7.577a.7.7,0,0,0,1.12.343l3.339-2.766a.984.984,0,0,1,1.214-.034l6.023,4.443a.7.7,0,0,0,1.106-.434l4.412-21.565a.71.71,0,0,0-.946-.815L.452,29.087A.722.722,0,0,0,.459,30.429ZM8.4,31.492,20.1,24.165a.206.206,0,0,1,.246.328l-9.663,9.126a2.046,2.046,0,0,0-.621,1.218l-.329,2.478a.3.3,0,0,1-.591.043L7.88,32.839A1.207,1.207,0,0,1,8.4,31.492Z" transform="translate(0 -19.401)" fill="#fabe0a"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact-social__facebook">
+                        <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="23.001" height="23.001" viewBox="0 0 23.001 23.001">
+                            <g id="Сгруппировать_4" data-name="Сгруппировать 4">
+                                <g id="Сгруппировать_3" data-name="Сгруппировать 3">
+                                    <path id="Контур_2" data-name="Контур 2" d="M16.319,0H6.681A6.689,6.689,0,0,0,0,6.681v9.638A6.689,6.689,0,0,0,6.681,23h9.638A6.689,6.689,0,0,0,23,16.319V6.681A6.689,6.689,0,0,0,16.319,0ZM21.2,16.319A4.89,4.89,0,0,1,16.319,21.2H6.681A4.89,4.89,0,0,1,1.8,16.319V6.681A4.89,4.89,0,0,1,6.681,1.8h9.638A4.89,4.89,0,0,1,21.2,6.681Z" fill="#fabe0a"/>
+                                </g>
+                            </g>
+                            <g id="Сгруппировать_6" data-name="Сгруппировать 6" transform="translate(5.301 5.301)">
+                                <g id="Сгруппировать_5" data-name="Сгруппировать 5">
+                                    <path id="Контур_3" data-name="Контур 3" d="M124.2,118a6.2,6.2,0,1,0,6.2,6.2A6.206,6.206,0,0,0,124.2,118Zm0,10.6a4.4,4.4,0,1,1,4.4-4.4A4.408,4.408,0,0,1,124.2,128.6Z" transform="translate(-118 -118)" fill="#fabe0a"/>
+                                </g>
+                            </g>
+                            <g id="Сгруппировать_8" data-name="Сгруппировать 8" transform="translate(16.907 4.484)">
+                                <g id="Сгруппировать_7" data-name="Сгруппировать 7" transform="translate(0)">
+                                    <ellipse id="Эллипс_1" data-name="Эллипс 1" cx="0.805" cy="0.805" rx="0.805" ry="0.805" fill="#fabe0a"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>   
+        
+        
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+        
+    </body>
+    </html>
