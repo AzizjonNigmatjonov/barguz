@@ -312,6 +312,7 @@
     
     .main-hidden-image {
         display: block;
+        padding-top: 40px;
     }
     
     .contact-list {
@@ -348,11 +349,42 @@
     }
 }
 
+@media (max-width: 682px) {
+    .catalogue-list {
+        overflow-y: scroll;
+    }
+}
+
 @media (max-width: 640px) {
     .container {
         width: 100%;
         padding: 30px 30px;
     }
+
+    .main-hidden-image .swiper-slide img:nth-child(1n) {
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .main-hidden-image .swiper-slide:nth-child(2n) img {
+        width: 300px !important;
+        height: 290px !important;
+        padding-top: 40px;
+    }
+
+    .main-hidden-image .swiper-slide:nth-child(3n) img {
+        padding-top: 55px;
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .main-hidden-image .swiper-slide:nth-child(4n) img {
+        padding-top: 25px;
+        padding-left: 40px;
+        width: 340px !important;
+        height: 250px !important;
+    }
+
     .catalogue-list {
         width: 350px;
         margin-left: 0px
