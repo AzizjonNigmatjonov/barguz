@@ -35,6 +35,20 @@
     .catalogue-list {
         margin-left: 0px;
     }
+    
+    .brend-list:nth-child(2n) img{
+        width: 200px;
+        height: 100px;
+    }
+    
+    .brend-link-2-1 {
+        width: 100px;
+    }
+    
+    .brend-img-2-1 {
+        width: 100px !important;
+        display: inline-block;
+    }
 }
 
 @media (max-width: 1279px) {
@@ -51,24 +65,31 @@
     .questions-img {
         width: 650px;
         margin-left: auto !important;
-        display: none;
     }
     .questions form {
         width: 295px;
     }
     
     .contact-list {
-        margin-left: 0;
+        margin-left: 0px !important;
         justify-content: center;
         align-items: center;
     }
     
     .contact-social {
-        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 100px;
+        justify-content: space-evenly;
+        padding: 70px;
     }
     
-    .contact-list:nth-child(1n) {
-        margin-top: 50px;
+    .contact-map {
+        margin-right: 150px;
+    }
+    
+    .contact-list li:nth-child(1n) {
+        margin-right: 0px;
     }
     
     .catalogue-list {
@@ -134,7 +155,7 @@
     .catalogue-list  {
         margin-left: 0px;
     }
-
+    
     .main-social-links {
         top: 280px;
         left: 0px;
@@ -155,6 +176,9 @@
     .header {
         width: 100%;
         height: 100%;
+    }
+    .nav-list.active {
+        display: flex;
     }
     .catalogue-list {
         width: 600px;
@@ -185,23 +209,73 @@
     .company-list {
         flex-direction: column-reverse;
     }
+    .company-title {
+        text-align: center;
+    }
     .company-text {
         text-align: center;
     }
     .company-text span{
         margin-left: 0;
     }
-    .contact-social {
-        justify-content: flex-start;
-        align-items: flex-start;
+    .catalogue-title {
+        text-align: center;
     }
+    
+    .contact-title {
+        text-align: center;
+    }
+    
+    .contact-social {
+        flex-direction: column-reverse;
+    }
+    .contact-map {
+        margin-right: 330px;
+    }
+    .contact-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 0;
+    }
+    
+    .contact-list li:nth-child(2n) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .contact-list li {
+        width: 280px;
+    }
+    
+    .contact-list li:nth-child(4n) img {
+        margin-right: 20px;
+    }
+    
+    .contact-list li:nth-child(4n)  {
+        justify-content: flex-start;
+    }
+    
+    .contact-social-links {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+    
+    .why-title {
+        text-align: center;
+    }
+    
+    .brend-title {
+        text-align: center;
+    }
+    
     .nav-list {
         display: none;
     }
     /* .main-social-links {
         bottom: 900px;
     }
-     */
+    */
     .main-text-side {
         margin-top: 40px;
     }
@@ -237,9 +311,26 @@
     .main-image-side {
         display: none;
     }
-
+    
     .main-hidden-image {
         display: block;
+    }
+    
+    .contact-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    
+    .contact-list li:nth-child(2n) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .contact-list li:nth-child(4n)  {
+        margin-top: 20px;
     }
 }
 
@@ -295,6 +386,10 @@
     .main-social-links {
         top: 270px;
     }
+    .questions-img {
+        width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 615px) {
@@ -338,7 +433,7 @@
         -moz-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         -o-transform: rotate(90deg);
-}
+    }
     .catalogue-btn-0 {
         right: 178px;
         top: -20px;
@@ -407,15 +502,18 @@
         -moz-transform: translateX(60px);
         -ms-transform: translateX(60px);
         -o-transform: translateX(60px);
-}
-    .catalogue-image__btn {
-        
     }
-
+    
     .catalogue-image__btn-circle {
         position: absolute;
         bottom: 0px;
         left: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .questions-img {
+        width: 400px;
     }
 }
 
@@ -456,4 +554,29 @@
     .main-social-links {
         top: 285px;
     }
+    .questions-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .order-item {
+        width: 140px;
+        height: 200px;
+        display: flex;
+    }
+    .order-item .order-text {
+        width: 100px;
+    }
+    .order-img {
+        width: 50px;
+    }
+    .order-item:nth-child(2n) img {
+        width: 40px;
+    } 
+    .order-item:nth-child(4n) img {
+        width: 45px;
+    } 
+    
+    
 }

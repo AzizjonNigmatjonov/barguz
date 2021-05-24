@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barg.uz</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -16,52 +17,62 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Barg.uz</title>
 </head>
 <body class="font-sans">
     
     <!-- navigation section -->
     <header id="Главная">
         <div class="container">
-            <nav class="nav flex justify-center flex justify-between items-center py-6 pt-8" role="navigation">
+            <nav class="flex items-center justify-center justify-between py-6 pt-8 nav" role="navigation">
                 <a href="#" class="nav-brand">
                     <img class="nav-brand-img" src="./assets/images/logo.svg" alt="Navbar Brand Image" width="115px">
                 </a>
-                <ul id="headerNavList" class="text-sm nav-list flex align-middle">
+                <ul id="headerNavList" class="flex text-sm align-middle nav-list">
                     <li class="nav-item lg:px-5 md:px-2">
-                        <a class="nav-link my-auto text-lg text-gray-900" href="#Главная">
+                        <a class="my-auto text-lg text-gray-900 nav-link" href="#Главная">
                             Главная
                         </a>
                     </li>
                     <li class="nav-item lg:px-5 md:px-3">
-                        <a class="nav-link my-auto text-lg " href="#компании">
+                        <a class="my-auto text-lg nav-link " href="#компании">
                             О компании
                         </a>
                     </li>
                     <li class="nav-item lg:px-5 md:px-3">
-                        <a class="nav-link my-auto text-lg " href="#Каталог">
+                        <a class="my-auto text-lg nav-link " href="#Каталог">
                             Каталог
                         </a>
                     </li>
                     <li class="nav-item lg:px-5 md:px-3">
-                        <a class="nav-link my-auto text-lg " href="#заказать">
+                        <a class="my-auto text-lg nav-link " href="#заказать">
                             Как заказать
                         </a>
                     </li>
                     <li class="nav-item lg:px-5 md:px-3">
-                        <a class="nav-link my-auto text-lg " href="#Контакты">
+                        <a class="my-auto text-lg nav-link " href="#Контакты">
                             Контакты
                         </a>
                     </li>
+                    <div class="flex items-center justify-between w-32 nav-social-links">
+                        <a href="#" class="main-social__facebook">
+                            <img src="./assets/images/facebook.svg" alt="Photo">
+                        </a>
+                        <a href="#" class="main-social__facebook">
+                            <img src="./assets/images/telegram.svg" alt="Photo">
+                        </a>
+                        <a href="#" class="main-social__facebook">
+                            <img src="./assets/images/instagram.svg" alt="Photo">
+                        </a>
+                    </div>
                 </ul>
-                <a class="nav-contact flex items-center invisible lg:visible" href="#">
-                    <img class="nav-contact__img w-4 h-4" src="./assets/images/phone-call.png" alt="Phone png image">
-                    <p class="nav-contact__text pl-2">99 909 00 99</p>            
+                <a class="flex items-center invisible nav-contact lg:visible" href="#">
+                    <img class="w-4 h-4 nav-contact__img" src="./assets/images/phone-call.png" alt="Phone png image">
+                    <p class="pl-2 nav-contact__text">99 909 00 99</p>            
                 </a>
-                <button id="barBtn" class="nav-bar focus:outline-none border-none cursor-pointer lg:hidden">
-                    <img class="nav-bar__img w-5" src="./assets/images/menu.svg" alt="Bar image">
+                <button id="barBtn" class="border-none cursor-pointer nav-bar focus:outline-none lg:hidden">
+                    <img class="w-5 nav-bar__img" src="./assets/images/menu.svg" alt="Bar image">
                 </button>
-                <button id="barCloseBtn" class="nav-bar focus:outline-none border-none cursor-pointer">
+                <button id="barCloseBtn" class="border-none cursor-pointer nav-bar focus:outline-none">
                     <img src="./assets/images/cancel.png" alt="photo" width="15px" height="15px">
                 </button>
             </nav>
@@ -70,22 +81,23 @@
     
     <!-- main section -->
     <main class="main">
+        <div id="bodyWrapper" class="wrapper"></div>
         <div class="container pt-8">
-            <ul class="main-list flex justify-between items-center">
+            <ul class="flex items-center justify-between main-list">
                 <li class="main-text-side">
-                    <h1 class="main-title text-5xl font-bold">
+                    <h1 class="text-5xl font-bold main-title">
                         Спецтехники <br>
                         для сложных задач<span class="main-text__dot"></span>
                     </h1>
-                    <p class="main-subtext text-md w-3/5 leading-4 pt-8 pb-12 leading-5">
+                    <p class="w-3/5 pt-8 pb-12 leading-4 leading-5 main-subtext text-md">
                         Является искажённым отрывком из философского трактата
                         Марка Туллия Цицерона «О пределах добра и зла», написанного 
                         в 45 году до н. э. на латинском языке 
                     </p>
-                    <a class="main-more-btn text-md py-1 px-5 rounded-sm inline-block font-semibold" href="#">
+                    <a class="inline-block px-5 py-1 font-semibold rounded-sm main-more-btn text-md" href="#">
                         Каталог
                     </a>
-                    <div class="main-social-links flex justify-between w-24">
+                    <div class="flex justify-between w-24 main-social-links">
                         <a href="#" class="main-social__facebook">
                             <img src="./assets/images/facebook.svg" alt="Photo">
                         </a>
@@ -101,21 +113,21 @@
                     <div class="main-image">
                         <div>
                             <div class="main-line">
-                                <div id="mainImgWrapper1" class="main-image__btn main-btn-1 flex items-center">
-                                    <p id="mainImageBtn1" class="cursor-pointer main-image-text text-md text-gray-500">Автокраны</p>
-                                    <span id="mainImgCircle1" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                <div id="mainImgWrapper1" class="flex items-center main-image__btn main-btn-1">
+                                    <p id="mainImageBtn1" class="text-gray-500 cursor-pointer main-image-text text-md">Автокраны</p>
+                                    <span id="mainImgCircle1" class="w-2 h-2 rounded-full cursor-pointer main-image__btn-circle ml-md"></span>
                                 </div>
-                                <div id="mainImgWrapper2" class="main-image__btn main-btn-2 flex items-center">
-                                    <p id="mainImageBtn2"  class="cursor-pointer main-image-text text-md text-gray-500">Бульдозеры</p>
-                                    <span id="mainImgCircle2" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                <div id="mainImgWrapper2" class="flex items-center main-image__btn main-btn-2">
+                                    <p id="mainImageBtn2"  class="text-gray-500 cursor-pointer main-image-text text-md">Бульдозеры</p>
+                                    <span id="mainImgCircle2" class="w-2 h-2 rounded-full cursor-pointer main-image__btn-circle ml-md"></span>
                                 </div>
-                                <div id="mainImgWrapper3"  class="main-image__btn active main-btn-3 flex items-center">
-                                    <p id="mainImageBtn3" class="cursor-pointer main-image-text text-md text-gray-500">Перегрузчик</p>
-                                    <span id="mainImgCircle3" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                <div id="mainImgWrapper3"  class="flex items-center main-image__btn active main-btn-3">
+                                    <p id="mainImageBtn3" class="text-gray-500 cursor-pointer main-image-text text-md">Перегрузчик</p>
+                                    <span id="mainImgCircle3" class="w-2 h-2 rounded-full cursor-pointer main-image__btn-circle ml-md"></span>
                                 </div>
-                                <div id="mainImgWrapper4"  class="main-image__btn main-btn-4 flex items-center">
-                                    <p id="mainImageBtn4" class="cursor-pointer main-image-text text-md text-gray-500">Экскаваторы</p>
-                                    <span id="mainImgCircle4" class="cursor-pointer main-image__btn-circle ml-md w-2 h-2 rounded-full"></span>
+                                <div id="mainImgWrapper4"  class="flex items-center main-image__btn main-btn-4">
+                                    <p id="mainImageBtn4" class="text-gray-500 cursor-pointer main-image-text text-md">Экскаваторы</p>
+                                    <span id="mainImgCircle4" class="w-2 h-2 rounded-full cursor-pointer main-image__btn-circle ml-md"></span>
                                 </div>
                                 <div id="soma" class="main-img" data-target="mainImageBtn1">
                                     <img src="./assets/images/soma.png" alt="Photo absolute" width="100%">
@@ -157,10 +169,10 @@
     <section class="company" id="компании">
         <div class="container pt-24">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="company-title text-2xl font-bold pb-8 text-3xl">О компании</h2>
-            <ul class="company-list flex items-center justify-start">
-                <li class="company-item w-1/3 text-sm text-gray-900">
-                    <p class="company-text leading-6"><span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги. <br><br>
+            <h2 class="pb-8 text-2xl text-3xl font-bold company-title">О компании</h2>
+            <ul class="flex items-center justify-start company-list">
+                <li class="w-1/3 text-sm text-gray-900 company-item">
+                    <p class="leading-6 company-text"><span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги. <br><br>
                         <span>Использовать</span> данный текст в книгопечатании начали еще 500 лет назад, чтобы продемонстрировать различные шрифты и внешний вид страницы заказчику. Благодаря такому заполнителю было видно, сколько строчек помещается на странице, подходит ли дизайн шрифтов для данной книги.</p>
                     </li>
                     <li class="company-item">
@@ -170,273 +182,273 @@
             </div>
         </section>
         
-        <section class="catalogue relative overflow-hidden" id="Каталог">
-            <div class="container pb-16 pt-20">
+        <section class="relative overflow-hidden catalogue" id="Каталог">
+            <div class="container pt-20 pb-16">
                 <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-                <h2 class="catalogue-title text-2xl font-bold mb-24 text-3xl">Каталог</h2>
+                <h2 class="mb-24 text-2xl text-3xl font-bold catalogue-title">Каталог</h2>
                 <div class="flex justify-start">
-                    <ul id="tools" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                    <ul id="tools" class="grid grid-cols-1 gap-12 pt-20 catalogue-list xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-8 xl:gap-x-20">
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
                     </ul>
-                    <ul id="peregruz" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                    <ul id="peregruz" class="grid grid-cols-1 gap-12 pt-20 catalogue-list xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-8 xl:gap-x-20">
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
                     </ul>  
-                    <ul id="cbuldozer" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20 active">
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                    <ul id="cbuldozer" class="grid grid-cols-1 gap-12 pt-20 catalogue-list xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-8 xl:gap-x-20 active">
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/yachar.png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/yachar.png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
-                            <p class="catalogue-text text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo">
+                            <p class="text-lg catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="./assets/images/Komatsu PC490LC-11 Hydraulic Excavator.png" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
                     </ul>         
-                    <ul id="ekskavator"  class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                    <ul id="ekskavator"  class="grid grid-cols-1 gap-12 pt-20 catalogue-list xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-8 xl:gap-x-20">
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
                     </ul>
-                    <ul id="combine" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR</p>
+                    <ul id="combine" class="grid grid-cols-1 gap-12 pt-20 catalogue-list xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-8 xl:gap-x-20">
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
                     </ul>    
-                    <ul id="katki" class="catalogue-list grid gap-12 xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 pt-20 lg:gap-x-8 xl:gap-x-20">
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR</p>
+                    <ul id="katki" class="grid grid-cols-1 gap-12 pt-20 catalogue-list xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-8 xl:gap-x-20">
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
-                        <li class="catalogue-item flex items-center justify-center flex-col">
-                            <img class="catalogue-img w-64" src="https://picsum.photos/500" alt="Photo">
-                            <p class="catalogue-text text-center text-lg">YER YANCHAR 2021</p>
+                        <li class="flex flex-col items-center justify-center catalogue-item">
+                            <img class="w-64 catalogue-img" src="https://picsum.photos/500" alt="Photo">
+                            <p class="text-lg text-center catalogue-text">YER YANCHAR 2021</p>
                         </li>
                     </ul> 
                 </div>
                 
                 <div class="catalogue-slider">
                     <div class="catalogue-slider-line">
-                        <div class="catalogue-image__btn catalogue-btn-0 flex items-center">
-                            <p data-target="tools" class="cursor-pointer catalogue-image-text  text-gray-500">Запчасти</p>
-                            <span class="catalogue-image__btn-circle ml-md w-3 h-3 rounded-full"></span>
+                        <div class="flex items-center catalogue-image__btn catalogue-btn-0">
+                            <p data-target="tools" class="text-gray-500 cursor-pointer catalogue-image-text">Запчасти</p>
+                            <span class="w-3 h-3 rounded-full catalogue-image__btn-circle ml-md"></span>
                         </div>
-                        <div class="catalogue-image__btn catalogue-btn-1 flex items-center">
-                            <p data-target="peregruz" class="cursor-pointer catalogue-image-text text-gray-500">Перегрузчик</p>
-                            <span class="catalogue-image__btn-circle ml-md w-3 h-3 rounded-full"></span>
+                        <div class="flex items-center catalogue-image__btn catalogue-btn-1">
+                            <p data-target="peregruz" class="text-gray-500 cursor-pointer catalogue-image-text">Перегрузчик</p>
+                            <span class="w-3 h-3 rounded-full catalogue-image__btn-circle ml-md"></span>
                         </div>
-                        <div class="catalogue-image__btn catalogue-btn-2 flex items-center">
-                            <p data-target="cbuldozer" id="cbuldozer" class="cursor-pointer catalogue-image-text text-gray-500">Бульдозеры</p>
-                            <span class="catalogue-image__btn-circle ml-md w-3 h-3 rounded-full"></span>
+                        <div class="flex items-center catalogue-image__btn catalogue-btn-2">
+                            <p data-target="cbuldozer" id="cbuldozer" class="text-gray-500 cursor-pointer catalogue-image-text">Бульдозеры</p>
+                            <span class="w-3 h-3 rounded-full catalogue-image__btn-circle ml-md"></span>
                         </div>
                         <div 
-                        class="catalogue-image__btn active catalogue-btn-3 flex items-center active">
-                        <p data-target="ekskavator" class="cursor-pointer catalogue-image-text text-gray-500">Экскаваторы</p>
-                        <span class="catalogue-image__btn-circle ml-md w-3 h-3 rounded-full"></span>
+                        class="flex items-center catalogue-image__btn active catalogue-btn-3">
+                        <p data-target="ekskavator" class="text-gray-500 cursor-pointer catalogue-image-text">Экскаваторы</p>
+                        <span class="w-3 h-3 rounded-full catalogue-image__btn-circle ml-md"></span>
                     </div>
-                    <div class="catalogue-image__btn catalogue-btn-5 flex items-center">
-                        <p data-target="combine" class="cursor-pointer catalogue-image-text text-gray-500">Комбайны</p>
-                        <span class="catalogue-image__btn-circle ml-md w-3 h-3 rounded-full"></span>
+                    <div class="flex items-center catalogue-image__btn catalogue-btn-5">
+                        <p data-target="combine" class="text-gray-500 cursor-pointer catalogue-image-text">Комбайны</p>
+                        <span class="w-3 h-3 rounded-full catalogue-image__btn-circle ml-md"></span>
                     </div>
-                    <div class="catalogue-image__btn catalogue-btn-6 flex items-center">
-                        <p data-target="katki" class="cursor-pointer catalogue-image-text text-gray-500">Катки</p>
-                        <span class="catalogue-image__btn-circle ml-md w-3 h-3 rounded-full"></span>
+                    <div class="flex items-center catalogue-image__btn catalogue-btn-6">
+                        <p data-target="katki" class="text-gray-500 cursor-pointer catalogue-image-text">Катки</p>
+                        <span class="w-3 h-3 rounded-full catalogue-image__btn-circle ml-md"></span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="flex justify-center pb-10 sm:pb-24">
-            <a href="#" class="catalogue-order-link py-1 px-5 rounded-sm font-semibold">Заказать</a>
+            <a href="#" class="px-5 py-1 font-semibold rounded-sm catalogue-order-link">Заказать</a>
         </div>
     </div>
 </section>
@@ -449,38 +461,38 @@
         </h2>
         <ul class="order-list">
             <li class="order-item">
-                <a href="#" class="order-link flex flex-col items-center">
+                <a href="#" class="flex flex-col items-center order-link">
                     <img class="order-img" src="./assets/images/choice.png" alt="photo">
                     <p class="order-text">Выберите подходящий
                         вариант</p>
                     </a>
                 </li>
                 <li class="order-item">
-                    <a href="#" class="order-link flex flex-col items-center">
+                    <a href="#" class="flex flex-col items-center order-link">
                         <img class="order-img" src="./assets/images/application.png" alt="photo">
                         <p class="order-text">Оставьте заявку</p>
                     </a>
                 </li>
                 <li class="order-item">
-                    <a href="#" class="order-link flex flex-col items-center">
+                    <a href="#" class="flex flex-col items-center order-link">
                         <img class="order-img" src="./assets/images/interview.png" alt="photo">
                         <p class="order-text">Встреча</p>
                     </a>
                 </li>
                 <li class="order-item">
-                    <a href="#" class="order-link flex flex-col items-center">
+                    <a href="#" class="flex flex-col items-center order-link">
                         <img class="order-img" src="./assets/images/signature.png" alt="photo">
                         <p class="order-text">Заключаем договор</p>
                     </a>
                 </li>
                 <li class="order-item">
-                    <a href="#" class="order-link flex flex-col items-center">
+                    <a href="#" class="flex flex-col items-center order-link">
                         <img class="order-img" src="./assets/images/credit-card (1).png" alt="photo">
                         <p class="order-text">Оплата</p>
                     </a>
                 </li>
                 <li class="order-item">
-                    <a href="#" class="order-link flex flex-col items-center">
+                    <a href="#" class="flex flex-col items-center order-link">
                         <img class="order-img" src="./assets/images/case-study.png" alt="photo">
                         <p class="order-text">Счастливый клиент</p>
                     </a>
@@ -492,13 +504,13 @@
     <section class="why">
         <div class="container">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="why-title text-2xl font-bold mb-24 pb-4 sm:pb-16 text-3xl">Почему выбирают нас?</h2>
-            <div class="why-separator flex justify-center items-center">
+            <h2 class="pb-4 mb-24 text-2xl text-3xl font-bold why-title sm:pb-16">Почему выбирают нас?</h2>
+            <div class="flex items-center justify-center why-separator">
                 <div class="why-image">
                     <img class="why-img" src="./assets/images/volvo-sd135b,5fd190c5.png" alt="photo">
                 </div>
                 <div class="why-elements">
-                    <ul class="why-list grid grid-cols-1 sm:grid-cols-2 gap-12">
+                    <ul class="grid grid-cols-1 gap-12 why-list sm:grid-cols-2">
                         <li class="why-item">
                             <img class="why-element-img" src="/assets/images/why-buld.png" alt="photo">
                             <span></span>
@@ -540,15 +552,15 @@
     <section class="brend">
         <div class="container pt-20">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-            <h2 class="brend-title text-2xl font-bold text-3xl">Бренды нашей техники</h2>
+            <h2 class="text-2xl text-3xl font-bold brend-title">Бренды нашей техники</h2>
         </div>
     </section>
     
     <section>
-        <div class="swiper-container container mySwiper pb-8">
+        <div class="container pb-8 swiper-container mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <ul class="flex justify-between items-center w-2/3 brend-list">
+                    <ul class="flex items-center justify-between w-2/3 brend-list">
                         <li class="brend-item">
                             <a href="#" class="brend-link">
                                 <img class="brend-img" src="./assets/images/hitachi.png" alt="photo">
@@ -561,7 +573,7 @@
                         </li>
                         <li class="brend-item">
                             <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/10-k16ZzUUTTFNRGTVRVek5czT1RRM.png" alt="photo">
+                                <img class="brend-img" src="./assets/images/10-k16ZzUUTTFNRGTVRVek5czT1RRM.png" width="40px" height="40px" alt="photo">
                             </a>
                         </li>
                         <li class="brend-item ml-lg">
@@ -572,49 +584,49 @@
                     </ul>
                 </div>
                 <div class="swiper-slide second">
-                    <ul class="flex justify-between items-center w-2/3 brend-list">
+                        <ul class="flex items-center justify-between w-2/3 brend-list">
+                            <li class="brend-item">
+                                <a href="#" class="brend-link">
+                                    <img class="brend-img" src="./assets/images/sinotruk353x146.png" alt="photo">
+                                </a>
+                            </li>
+                            <li class="brend-item mx-lg">
+                                <a href="#" class="brend-link">
+                                    <img class="brend-img" src="./assets/images/cat.png" alt="photo">
+                                </a>
+                            </li>
+                            <li class="brend-item">
+                                <a href="#" class="brend-link">
+                                    <img class="brend-img" src="./assets/images/10-k16ZzUUTTFNRGTVRVek5czT1RRM.png" width="40px" height="40px" alt="photo">
+                                </a>
+                            </li>
+                            <li class="brend-item ml-lg">
+                                <a href="#" class="brend-link">
+                                    <img class="brend-img mb-lg" src="./assets/images/m.png" alt="photo">
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="swiper-slide third">
+                    <ul class="flex items-center justify-between w-2/3 brend-list">
                         <li class="brend-item">
                             <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/Zoomlion-Heavy-Industry.png" alt="photo">
+                                <img class="brend-img" src="./assets/images/hitachi.png" alt="photo">
                             </a>
                         </li>
                         <li class="brend-item mx-lg">
                             <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/Yuchai_logo_red.png" alt="photo">
+                                <img class="brend-img" src="./assets/images/af36a8e7988d29a051f3aced25454f4e.png" alt="photo">
                             </a>
                         </li>
                         <li class="brend-item">
                             <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/sinotruk353x146.png" alt="photo">
+                                <img class="brend-img" src="./assets/images/unnamed.jpg" width="40px" height="40px" alt="photo">
                             </a>
                         </li>
                         <li class="brend-item ml-lg">
                             <a href="#" class="brend-link">
-                                <img class="brend-img mb-lg" src="./assets/images/9b3f2c294dcb648977fbabacc92b678b.png" alt="photo">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide third">
-                    <ul class="flex justify-between items-center w-2/3 brend-list">
-                        <li class="brend-item">
-                            <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/0_winter.jpg" alt="photo">
-                            </a>
-                        </li>
-                        <li class="brend-item mx-lg deutz">
-                            <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/01518_00.png" alt="photo">
-                            </a>
-                        </li>
-                        <li class="brend-item mcom">
-                            <a href="#" class="brend-link">
-                                <img class="brend-img" src="./assets/images/unnamed.jpg" alt="photo">
-                            </a>
-                        </li>
-                        <li class="brend-item ml-lg">
-                            <a href="#" class="brend-link">
-                                <img class="brend-img mb-lg" src="./assets/images/af36a8e7988d29a051f3aced25454f4e.png" alt="photo">
+                                <img class="brend-img mb-lg" src="./assets/images/m.png" alt="photo">
                             </a>
                         </li>
                     </ul>
@@ -628,22 +640,22 @@
         
         <!-- questions section -->
         <section class="questions pt-14">
-            <div class="container flex items-center justify-center py-8 flex-wrap-reverse">
-                <form action="/" method="POST" class="w-1/4 p-9 rounded-md">
+            <div class="container flex flex-wrap-reverse items-center justify-center py-8">
+                <form action="/" method="POST" class="w-1/4 rounded-md p-9">
                     <h1 class="visually-hidden"></h1>
-                    <h2 class="font-bold text-2xl text-gray-50 mb-lg mt-sm text-3xl">Есть вопросы?</h2>
+                    <h2 class="text-2xl text-3xl font-bold text-gray-50 mb-lg mt-sm">Есть вопросы?</h2>
                     <label for="" class="">
-                        <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="text" placeholder="Ваше имя" required>
+                        <input class="w-full px-2 py-2 font-normal placeholder-gray-400 bg-transparent border-0 outline-none mb-lg text-gray-50" type="text" placeholder="Ваше имя" required>
                     </label>
                     <label for="">
-                        <input class="px-2 py-2 outline-none border-0 bg-transparent placeholder-gray-400 font-normal mb-lg text-gray-50 w-full" type="tel" placeholder="Телефон" required>
+                        <input class="w-full px-2 py-2 font-normal placeholder-gray-400 bg-transparent border-0 outline-none mb-lg text-gray-50" type="tel" placeholder="Телефон" required>
                     </label>
-                    <div class="flex justify-center items-center mt-lg flex-col mb-md">
-                        <a href="#" class="questions-form-link py-2 px-7 rounded-sm font-semibold text-sm inline-block mx-auto">Заказать</a>
+                    <div class="flex flex-col items-center justify-center mt-lg mb-md">
+                        <a href="#" class="inline-block py-2 mx-auto text-sm font-semibold rounded-sm questions-form-link px-7">Заказать</a>
                         <p class="text-sm text-gray-400 mt-lg">Все услуги лицензированны</p>
                     </div>
                 </form>
-                <div class="questions-img inline-block xl:pl-28">
+                <div class="inline-block questions-img xl:pl-28">
                     <img class="w-full" src="./assets/images/Прямоугольник 24.png" alt="photo">
                 </div>
             </div>
@@ -651,10 +663,10 @@
         
         
         <section class="contact" id="Контакты">
-            <div class="container pb-28 pt-16">
+            <div class="container pt-16 pb-28">
                 <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
-                <h2 class="contact-title text-2xl font-bold text-3xl">Контакты</h2>
-                <div class="contact-social flex items-center justify-center pt-16">
+                <h2 class="text-2xl text-3xl font-bold contact-title">Контакты</h2>
+                <div class="flex items-center justify-center xl:pt-16 contact-social">
                     <ul class="contact-list">
                         <li class="flex items-center">
                             <img class="w-4 mr-lg" src="./assets/images/pin (1).png" alt="photo">
@@ -668,7 +680,7 @@
                             <img class="w-5 mr-lg" src="./assets/images/email (1).png" alt="photo">
                             <a href="#" class="text-gray-600">barg@gmail.com </a>
                         </li>  
-                        <div class="contact-social-links flex justify-between items-center w-20">
+                        <li class="flex items-center justify-between w-20 contact-social-links">
                             <a href="#" class="contact-social__facebook">
                                 <img class="w-3" src="./assets/images/facebook.svg" alt="Photo">
                             </a>
@@ -678,9 +690,9 @@
                             <a href="#" class="contact-social__facebook">
                                 <img class="w-5" src="./assets/images/instagram.svg" alt="Photo">
                             </a>
-                        </div>
+                        </li>
                     </ul>
-                    <div class="w-1/3 contact-map rounded-sm">
+                    <div class="w-1/3 rounded-sm contact-map">
                         <iframe class="rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4438038781886!2d69.2828901152867!3d41.29920797927233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2616f94705%3A0x720b816eb8acffcb!2sMountain%20uz!5e0!3m2!1sru!2s!4v1621415363370!5m2!1sru!2s" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -689,14 +701,14 @@
         
         
         <footer class="footer">
-            <div class="container flex items-center justify-center flex-col py-16">
+            <div class="container flex flex-col items-center justify-center py-16">
                 <h1 class="visually-hidden">Lorem ipsum dolor sit.</h1>
                 <p class="footer-brand">
                     <img src="./assets/images/barg.png" alt="photo">
                 </p>
-                <nav class="flex justify-center items-center py-6" role="navigation">
+                <nav class="flex items-center justify-center py-6" role="navigation">
                     <div class="">
-                        <ul class="text-sm flex align-middle invisible md:visible justify-center items-center">
+                        <ul class="flex items-center justify-center invisible text-sm align-middle md:visible">
                             <li class="lg:px-5 md:px-2">
                                 <a class="text-gray-300" href="#">
                                     Главная
@@ -725,17 +737,17 @@
                         </ul>
                     </div>
                 </nav>
-                <p class="text-gray-300 text-lg">Есть вопросы</p>
+                <p class="text-lg text-gray-300">Есть вопросы</p>
                 <form class="mt-lg" action="/" method="">
                     <label for="">
-                        <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none bg-gray-50 font-normal rounded-sm" type="text" placeholder="Имя">
+                        <input class="px-3 py-1 font-normal text-gray-700 placeholder-gray-400 border-0 rounded-sm outline-none bg-gray-50" type="text" placeholder="Имя">
                     </label>
                     <label for="">
-                        <input class="outline-none border-0 placeholder-gray-400 text-gray-700 px-3 py-1 outline-none font-normal bg-gray-50 rounded-sm mx-sm" type="tel" placeholder="Тел">
+                        <input class="px-3 py-1 font-normal text-gray-700 placeholder-gray-400 border-0 rounded-sm outline-none bg-gray-50 mx-sm" type="tel" placeholder="Тел">
                     </label>
-                    <a class="contact-form-link py-1 px-4 rounded-sm inline-block font-semibold" href="#">Заказать</a>
+                    <a class="inline-block px-4 py-1 font-semibold rounded-sm contact-form-link" href="#">Заказать</a>
                 </form>
-                <div class="flex justify-between items-center w-24 mt-lg">
+                <div class="flex items-center justify-between w-24 mt-lg">
                     <a href="#" class="contact-social__facebook">
                         <svg id="facebook-app-symbol" xmlns="http://www.w3.org/2000/svg" width="11.944" height="23.001" viewBox="0 0 11.944 23.001">
                             <path id="f_1_" d="M45.043,23V12.51h3.52l.528-4.09H45.043V5.809c0-1.184.327-1.99,2.027-1.99h2.164V.16A29.34,29.34,0,0,0,46.08,0c-3.122,0-5.259,1.906-5.259,5.4V8.42H37.29v4.09h3.531V23Z" transform="translate(-37.29)" fill="#fabe0a"/>
