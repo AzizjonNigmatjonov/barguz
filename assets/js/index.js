@@ -51,11 +51,20 @@ const navList = document.getElementById('headerNavList');
 const navCloseBtn = document.getElementById('barCloseBtn');
 navCloseBtn.style.display = 'none';
 // open navbar
+
+const navBarCloseImg = document.querySelector('.nav-bar__img');
+
+bodyWrapper.style.display = 'none';
 navBtn.addEventListener('click', e => {
-    bodyWrapper.style.display = 'block';
-    navList.classList.add('active');
-    navCloseBtn.style.display = 'block';
-    navBtn.style.display = 'none';
+    console.log(e.target);
+    if (e.target == navBarCloseImg) {
+        bodyWrapper.style.display = 'block';
+        navList.classList.add('active');
+        navCloseBtn.style.display = 'block';
+        navBtn.style.display = 'none';
+    } else {
+        bodyWrapper.style.display = 'none';
+    }
 })
 
 navCloseBtn.addEventListener('click', e => {
@@ -68,7 +77,8 @@ const mainLine = document.querySelector('.main-line')
 
 window.addEventListener('click', e => {
     console.log(e);
-    if (e.target == mainLine || e.target == bodyWrapper || e.target == mainImgWrapper2 || e.target == mainImgWrapper3 || e.target == mainImgWrapper4) {
+    if (e.target == mainLine || e.target == bodyWrapper) {
+        bodyWrapper.style.display = 'none';
         navList.classList.remove('active')
         navCloseBtn.style.display = 'none';
         navBtn.style.display = 'block';
