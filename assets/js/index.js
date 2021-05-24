@@ -54,17 +54,11 @@ navCloseBtn.style.display = 'none';
 
 const navBarCloseImg = document.querySelector('.nav-bar__img');
 
-bodyWrapper.style.display = 'none';
 navBtn.addEventListener('click', e => {
-    console.log(e.target);
-    if (e.target == navBarCloseImg) {
-        bodyWrapper.style.display = 'block';
-        navList.classList.add('active');
-        navCloseBtn.style.display = 'block';
-        navBtn.style.display = 'none';
-    } else {
-        bodyWrapper.style.display = 'none';
-    }
+    bodyWrapper.style.display = 'block';
+    navList.classList.add('active');
+    navCloseBtn.style.display = 'block';
+    navBtn.style.display = 'none';
 })
 
 navCloseBtn.addEventListener('click', e => {
