@@ -84,7 +84,7 @@ html {
     object-fit: cover;
 }
 
-.main .wrapper {
+header .wrapper {
     display: none;
     position: fixed;
     z-index: 1;
