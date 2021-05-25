@@ -26,6 +26,8 @@ const mainImgWrapper4 = document.getElementById('mainImgWrapper4');
 
 // get catalogue img change btn text
 const catalogChangeBtns = document.querySelectorAll('.catalogue-image-text');
+// cataloge wrapper image change btn
+const catalogChangeBtnWrapper = document.querySelectorAll('.catalogue-image__btn-circle');
 
 // get catalogue lists
 const catalogList = document.querySelectorAll('.catalogue-list');
@@ -70,20 +72,17 @@ navCloseBtn.addEventListener('click', e => {
 const mainLine = document.querySelector('.main-line')
 
 window.addEventListener('click', e => {
-    console.log(e);
     if (e.target == mainLine || e.target == bodyWrapper) {
         bodyWrapper.style.display = 'none';
         navList.classList.remove('active')
         navCloseBtn.style.display = 'none';
         navBtn.style.display = 'block';
-    } else {
-        
     }
-    console.log(e.target);
 });
 
 catalogChangeBtns.forEach(element => {
     element.addEventListener('click', e => {
+        console.log(e.target);
         if (e.target.dataset.target == 'cbuldozer') {
             if (catalogBuldozerList.id  == e.target.dataset.target) {
                 catalogBuldozerList.classList.add('active')
@@ -158,6 +157,80 @@ catalogChangeBtns.forEach(element => {
         }
     })
 })
+
+console.log(catalogChangeBtnWrapper);
+
+catalogChangeBtnWrapper.forEach(element => {
+    element.addEventListener('click', e => {
+        console.log(e.target.id);
+        if (e.target.id == 'buldozerSircle') {
+            
+            catalogBuldozerList.classList.add('active')
+            catalogImgWrapper3.classList.add('active');
+            
+            
+            
+        } else {
+            catalogBuldozerList.classList.remove('active');
+            catalogImgWrapper3.classList.remove('active');
+        }
+        if (e.target.id == 'ekskavatorSircle'){
+            
+            catalogEkskavator.classList.add('active');
+            catalogImgWrapper4.classList.add('active');
+            
+            
+            
+        } else {
+            catalogEkskavator.classList.remove('active');
+            catalogImgWrapper4.classList.remove('active');
+        }
+        if (e.target.id== 'combineSircle'){
+            
+            catalogCombineList.classList.add('active');
+            catalogImgWrapper5.classList.add('active');
+            
+            
+            
+        } else {
+            catalogCombineList.classList.remove('active');
+            catalogImgWrapper5.classList.remove('active');
+        }
+        if (e.target.id == 'katkiSircle'){
+            
+            catalogKatki.classList.add('active');
+            catalogImgWrapper6.classList.add('active');
+            
+            
+            
+        } else {
+            catalogKatki.classList.remove('active');
+            catalogImgWrapper6.classList.remove('active');
+        }
+        if (e.target.id == 'peregruzSircle'){
+            
+            catalogPeregruz.classList.add('active')
+            catalogImgWrapper2.classList.add('active');
+            
+            
+        } else {
+            catalogPeregruz.classList.remove('active');
+            catalogImgWrapper2.classList.remove('active');
+        }
+        if (e.target.id == 'toolsCircle'){
+            
+            catalogTools.classList.add('active');
+            catalogImgWrapper1.classList.add('active');
+            
+            
+            
+        } else {
+            catalogTools.classList.remove('active');
+            catalogImgWrapper1.classList.remove('active');
+        }
+    })
+})
+
 
 // changa main image function
 mainImgChangeBtn.forEach(element => {

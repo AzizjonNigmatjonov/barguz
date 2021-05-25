@@ -352,7 +352,7 @@
 @media (max-width: 682px) {
     .catalogue-list {
         overflow-y: scroll;
-    }
+    }       
 }
 
 @media (max-width: 640px) {
