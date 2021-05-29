@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build assets/css/tailwind.css -o assets/css/main.css"
+    "build": "tailwind build assets/css/tailwind.css -o assets/css/main.css",
+    "watch": "tailwind build assets/css/tailwind.css -o assets/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
