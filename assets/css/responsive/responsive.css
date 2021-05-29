@@ -459,6 +459,10 @@
         flex-direction: column;
         width: 100%;
     }
+
+    .company-item:nth-child(1n) br {
+        display: none;
+    }
     
     .company-img {
         width: 700px;
@@ -502,6 +506,10 @@
         width: 100%;
         text-align: center;
         padding-bottom: 25px;
+    }
+
+    .why-img {
+        margin-right: 0px;
     }
     
     .brend-title {

@@ -589,6 +589,10 @@ header .wrapper {
     right: -5px;
 }
 
+.order-item:nth-child(6n)::after {
+    display: none;
+}
+
 .order-link {
     width: 200px;
     height: 150px;
@@ -635,6 +639,7 @@ header .wrapper {
 .why-img {
     width: 500px;
     object-fit: cover;
+    margin-right: 50px;
 }
 
 .why-item {
@@ -725,6 +730,7 @@ header .wrapper {
 .swiper-slide img {
     width: 100%;
     height: auto;
+    padding: 0px 25px;
 }
 
 .swiper-wrapper .unnamed {
@@ -774,6 +780,18 @@ header .wrapper {
 
 .contact-social-links {
     margin-top: 70px;
+}
+
+.contact-social__facebook img:nth-child(1n) {
+    width: 10px;
+}
+
+.contact-social__facebook:nth-child(2n) img {
+    width: 18px !important;
+}
+
+.contact-social__facebook:nth-child(3n) img {
+    width: 18px;
 }
 
 .footer {
