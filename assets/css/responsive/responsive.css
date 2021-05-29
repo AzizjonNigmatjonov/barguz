@@ -463,6 +463,10 @@
     .company-item:nth-child(1n) br {
         display: none;
     }
+
+    .company-text-second {
+        display: none !important;
+    }
     
     .company-img {
         width: 700px;
@@ -1672,6 +1676,18 @@
 
     .order-item {
         height: 170px;
+    }
+
+    .order-item:nth-child(1n) {
+        margin-bottom: 60px;
+    }
+
+    .order-item:nth-child(1n)::after {
+        top: 165px;
+    }
+
+    .order-item:nth-child(1n):hover:after {
+        top: 170px;
     }
 
     .order-item:nth-child(2n) img {
