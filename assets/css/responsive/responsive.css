@@ -1703,30 +1703,64 @@
         padding: 0 !important;
     }
 
+    .order-item {
+        width: 120px;
+        height: 100%;
+        display: flex;
+        padding: 0 !important;
+        margin: 0px 0px 15px 0px !important;
+    }
+
     .order-item::after {
         display: block;
+        top: 125px !important;
     }
-    
-    .order-item {
-        width: 140px;
-        height: 200px;
-        display: flex;
+
+    .order-item:hover::after {
+        top: 130px;
     }
+
     .order-item .order-text {
         width: 100px;
     }
 
-    .order-item:nth-child(1n) {
+    .order-item:nth-child(1) {
         margin-top: 20px;
+        margin-bottom: 40px !important;
     }
 
-    .order-item:nth-child(5n)::after {
+    
+    .order-item:nth-child(1):after {
+        top: 150px !important;
+    }
+
+    
+    .order-item:nth-child(3) {
+        margin-bottom: 0px !important;
+    }
+
+    .order-item:nth-child(3):after {
+        top: 100px !important;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+
+    .order-item:nth-child(5) {
+        margin-bottom: 0 !important;
+    }
+
+    .order-item:nth-child(5)::after {
         display: block;
+        top: 100px !important;
+        margin-bottom: 0 !important;
     }
 
-    .order-item:nth-child(6n) {
+    .order-item:nth-child(6) {
         margin-bottom: 0;
-        height: 100px;
+    }
+
+    .order-title {
+        padding-bottom: 30px;
     }
 
     .order-img {
@@ -1814,27 +1848,6 @@
         top: 465px;
         right: 562px;
     }
-
-    .order-item {
-        margin-bottom: 20px !important;
-        height: 155px;
-    }
-
-    .order-item::after {
-        top: 130px !important;
-    }
-
-    .order-item:nth-child(1):after {
-        top: 160px !important;
-    }
-
-    .order-item:nth-child(3):after {
-        top: 110px !important;
-    }
-
-    .order-item:nth-child(5):after {
-        top: 110px !important;
-    }
     
 }
 
@@ -1915,5 +1928,15 @@
 
     .catalogue-select select {
         width: 200px !important;
+    }
+}
+
+@media (max-width:320px) {
+    .main .container {
+      padding-bottom: 30px !important;
+    }
+
+    .company .container {
+        padding-top: 10px;
     }
 }
