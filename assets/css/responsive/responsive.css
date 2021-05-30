@@ -1851,6 +1851,12 @@
     
 }
 
+@media (max-width: 368px) {
+    .main-more-btn {
+        margin-top: 30px;
+    }
+}
+
 @media (max-width: 360px) {
     .main-line {
         border: none;
