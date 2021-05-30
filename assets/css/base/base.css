@@ -1,37 +1,7 @@
+/* base css properties */
+
 html {
     scroll-behavior: smooth;
-}
-
-.main {
-    /* display: none; */
-}
-
-.why {
-    /* display: none; */
-}
-
-.questions {
-    /* display: none; */
-}
-
-.company {
-    /* display: none; */
-} 
-
-/* .catalogue {
-    display: none;
-}
-
-.order {
-    display: none;
-}
-
-.brend {
-    display: none;
-} */
-
-.swiper-container {
-    /* display: none; */
 }
 
 .visually-hidden {
@@ -44,13 +14,6 @@ html {
     width: 1px;
 }
 
-#bar-list {
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 0.2s; /* don't forget to set a duration! */
-}
-
 .container {
     margin: 0 auto;
 }
@@ -59,17 +22,8 @@ header .container {
     padding-top: 30px;
 }
 
-.nav-list.active .nav-item {
-    padding: 10px 30px 10px 0px;
-}
-
 .nav-social-links {
     display: none;
-}
-
-.nav-list.active .nav-social-links {
-    display: flex;
-    padding: 10px 30px 10px 0px;
 }
 
 .nav-link {
@@ -297,6 +251,7 @@ header .wrapper {
     width: 20px;
     height: 20px;
     box-shadow: 0px 0px 0px 10px #fabe0aff;
+    opacity: 0.7;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -492,6 +447,7 @@ header .wrapper {
     width: 20px;
     height: 20px;
     box-shadow: 0px 0px 0px 10px #fabe0a;
+    opacity: 0.7;
     animation: open 0.2s ease;
     -webkit-animation: open 0.2s ease;
 }

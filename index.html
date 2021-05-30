@@ -17,7 +17,7 @@
 </head>
 <body class="font-sans">
     
-    <!-- navigation section -->
+    <!-- navbar section-start -->
     <header id="Главная">
         <div id="bodyWrapper" class="wrapper"></div>
         <div class="container">
@@ -69,6 +69,8 @@
                 </a>
             </nav>
             
+            <!-- responsive navbar-start -->
+
             <nav class="flex items-center justify-center py-6 pt-8 navbar-second" role="navigation">
                 <a href="#" class="nav-brand">
                     <img class="nav-brand-img" src="./assets/images/logo.svg" alt="Navbar Brand Image" width="115px">
@@ -126,10 +128,14 @@
             </button>
         </nav>
         
+        <!-- responsive navbar-end -->
+
     </div>
 </header>
 
-<!-- main section -->
+<!-- navbar section-end -->
+
+<!-- main section-start -->
 <main class="main">
     <div class="container pt-8">
         <ul class="flex items-center justify-between main-list">
@@ -198,24 +204,9 @@
         </ul>
     </div>
 </main>
+<!-- main section-end -->
 
-<div class="main-hidden-image">
-    <div class="swiper-container mySwiper2 swiper-container-2">
-        <div class="swiper-wrapper swiper-wrapper-2">
-            <div class="swiper-slide">
-                <img src="./assets/images/soma.png" alt="Photo absolute" width="300px">
-            </div>
-            <div class="swiper-slide">
-                <img src="./assets/images/4096x3187_1131424_[www.ArtFile.ru].png" alt="Photo absolute" width="100%">
-            </div>
-            <div class="swiper-slide"><img src="./assets/images/company-img.png" alt="Photo absolute" width="100%"></div>
-            <div class="swiper-slide"><img src="./assets/images/yachar.png" alt="Photo absolute" width="100%"></div>
-        </div>
-    </div>
-</div>
-
-
-
+<!-- company section-start -->
 <section class="company" id="компании">
     <div class="container pt-28">
         <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
@@ -231,7 +222,9 @@
         </ul>
     </div>
 </section>
+<!-- company section-end -->
 
+<!-- catalogue section-start -->
 <section class="relative overflow-hidden catalogue" id="Каталог">
     <div class="container pt-20 pb-16">
         <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
@@ -467,6 +460,7 @@
             </ul> 
         </div>
         
+        <!-- catalogue section image switcher section-start -->
         <div class="catalogue-slider">
             <div class="catalogue-slider-line">
                 <div class="flex items-center catalogue-image__btn catalogue-btn-0">
@@ -496,13 +490,16 @@
             </div>
         </div>
     </div>
+    <!-- catalogue section image switcher section-end -->
 </div>
+
+<!-- catalogue section order link -->
 <div class="flex justify-center pb-12 sm:pb-20 sm:pb-24">
     <a href="#questions" class="px-5 py-1 rounded-sm catalogue-order-link">Заказать</a>
 </div>
 </div>
 
-
+<!-- catalogue section responsive image selector -->
 <form class="catalogue-select" action="/">
     <select name="vehicle" id="vehicle">
         <option data-target="tools"  id="selectTools" value="tools">Запчасти</option>
@@ -513,10 +510,10 @@
         <option data-target="katki"  id="selectKatoki" value="katoki">Катки</option>
     </select>
 </form>
-
-
 </section>
+<!-- catalogue section-end -->
 
+<!-- order section-start -->
 <section class="order" id="заказать">
     <div class="container flex flex-col items-center justify-center p-20 mx-auto">
         <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
@@ -565,7 +562,9 @@
             </ul>
         </div>
     </section>
+    <!-- order section-end -->
     
+     <!-- why section-start -->
     <section class="why">
         <div class="container pt-24">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
@@ -613,7 +612,9 @@
             </div>
         </div>
     </section>
+     <!-- why section-end -->
     
+      <!-- brend section-start -->
     <section class="brend">
         <div class="container pt-24">
             <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
@@ -621,6 +622,7 @@
         </div>
     </section>
     
+     <!-- order section slide-start -->
     <section>
         <div class="container py-0 xl:py-8 swiper-container mySwiper">
             <div class="swiper-wrapper">
@@ -667,8 +669,9 @@
                 <div class="swiper-button-prev"></div> -->
             </div>
         </section>
+        <!-- order section slide-end -->
         
-        <!-- questions section -->
+        <!-- questions section-start -->
         <section class="pt-0 xl:pt-4 questions" id="questions">
             <div class="container flex items-center justify-center py-2 xl:py-8">
                 <form action="/" method="POST" class="w-1/4 rounded-md p-9">
@@ -690,8 +693,9 @@
                 </div>
             </div>
         </section>
+        <!-- questions section-end -->
         
-        
+        <!-- contacts section-start -->
         <section class="contact" id="Контакты">
             <div class="container pb-28">
                 <h1 class="visually-hidden">Lorem, ipsum dolor.</h1>
@@ -728,8 +732,9 @@
                 </div>
             </div>
         </section>
+        <!-- contacts section-end -->
         
-        
+        <!-- footer section-start -->
         <footer class="footer">
             <div class="container flex flex-col items-center justify-center py-16">
                 <h1 class="visually-hidden">Lorem ipsum dolor sit.</h1>
@@ -812,6 +817,7 @@
                 </div>
             </div>
         </footer>   
+        <!-- questions section-end -->
         
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

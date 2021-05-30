@@ -1,3 +1,5 @@
+// JavaScript
+
 const barBtn = document.getElementById('barBtn');
 const barList = document.getElementById('bar-list');
 barBtn.addEventListener('click', e => {
@@ -394,7 +396,5 @@ catalogueSelectOptionElement.forEach(element => {
         }
     })
 })
-
-
 
 AOS.init();
