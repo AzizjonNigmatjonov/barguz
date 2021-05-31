@@ -589,6 +589,10 @@
     header .nav {
         display: none;
     }
+
+    .main .container.blured {
+        filter: blur(3px);
+    }
     
     .navbar-second {
         display: flex;

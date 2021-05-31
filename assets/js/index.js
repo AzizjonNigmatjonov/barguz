@@ -56,18 +56,23 @@ const navCloseBtn = document.getElementById('barCloseBtn');
 // open navbar
 navList.style.display = 'none';
 const navBarCloseImg = document.querySelector('.nav-bar__img');
+// main container 
+const mainContainer = document.querySelector('.main .container');
+
 
 navBtn.addEventListener('click', e => {
     bodyWrapper.style.display = 'block';
     navCloseBtn.style.display = 'inline-block';
     navBtn.style.display = 'none';
     navList.style.display = 'flex';
+    mainContainer.classList.add('blured')
 })
 
 navCloseBtn.addEventListener('click', e => {
     navList.style.display = 'none';
     navCloseBtn.style.display = 'none';
     navBtn.style.display = 'block';
+    mainContainer.classList.remove('blured')
 })
 
 const mainLine = document.querySelector('.main-line')
