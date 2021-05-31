@@ -17,7 +17,7 @@ html {
 .container {
     margin: 0 auto;
 }
-
+/* 
 header {
     position: fixed;
     left: 50%;
@@ -26,10 +26,10 @@ header {
     width: 100%;
     top: 0;
     background-color: #fff;
-} 
+}  */
 
 header .container {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .nav-social-links {
@@ -85,9 +85,9 @@ header .wrapper {
     background-color: transparent;
 }
 
-.main .container {
+/* .main .container {
     margin-top: 130px;
-}
+} */
 
 .main-text-side {
     position: relative;
