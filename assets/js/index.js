@@ -283,9 +283,6 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         dynamicBullets: true,
     },
-    autoplay: {
-        delay: 3000,
-    },
     speed: 600,
     lazy: true,
     parallax: true,
