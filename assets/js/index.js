@@ -60,13 +60,14 @@ const navBarCloseImg = document.querySelector('.nav-bar__img');
 const mainContainer = document.querySelector('.main-text-side');
 // main navbar brand
 const navBarBrand = document.querySelector('.nav');
+const headerElement = document.querySelector('header');
 
 navBtn.addEventListener('click', e => {
     bodyWrapper.style.display = 'block';
     navCloseBtn.style.display = 'inline-block';
     navBtn.style.display = 'none';
     navList.style.display = 'flex';
-    mainContainer.classList.add('blured')
+    // mainContainer.classList.add('blured')
     navBarBrand.classList.add('blured');
 })
 
@@ -74,7 +75,7 @@ navCloseBtn.addEventListener('click', e => {
     navList.style.display = 'none';
     navCloseBtn.style.display = 'none';
     navBtn.style.display = 'block';
-    mainContainer.classList.remove('blured');
+    // mainContainer.classList.remove('blured');
     navBarBrand.classList.remove('blured');
 })
 
