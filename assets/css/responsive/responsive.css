@@ -173,7 +173,7 @@
         width: 100px !important;
         display: inline-block;
     }
-
+    
     .swiper-container {
         padding: 50px 0px;
     }
@@ -461,11 +461,11 @@
         flex-direction: column;
         width: 100%;
     }
-
+    
     .company-item:nth-child(1n) br {
         display: none;
     }
-
+    
     .company-text-second {
         display: none !important;
     }
@@ -513,7 +513,7 @@
         text-align: center;
         padding-bottom: 25px;
     }
-
+    
     .why-img {
         margin-right: 0px;
     }
@@ -535,7 +535,7 @@
         width: 300px;
         height: 100px;
     }
-
+    
     .order-item:nth-child(3)::after {
         transform: rotate(90deg);
     }
@@ -589,9 +589,14 @@
     header .nav {
         display: none;
     }
-
-    .main .container.blured {
-        filter: blur(3px);
+    
+    .nav.blured {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    
+    .main-text-side.blured {
+        filter: blur(10px);
     }
     
     .navbar-second {
@@ -608,7 +613,8 @@
         left: 0;
         top: 0px;
         transform: translateX(50%);
-        background-color: rgba(255, 255, 255, 0.95); 
+        background-color: rgba(255, 255, 255, 1); 
+        box-shadow: 0px 5px 30px rgba(0,0,0,.1);
         z-index: 1;
         padding: 30px 0px;
         animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
@@ -624,7 +630,7 @@
         border: none;
         outline: none;
         width: 100%;
-        height: 2px;
+        height: 0.1px;
         background-color: #9F9DA1;
         margin-top: 40px;
     }
@@ -667,6 +673,7 @@
     
     .main-more-btn {
         top: 730px;
+        z-index: 1;
     }
     
     .main-social-links {
@@ -800,7 +807,7 @@
         font-size: 18px;
         width: 100px;
     }
-
+    
     .swiper-wrapper .unnamed {
         width: 80px !important;
     }
@@ -931,7 +938,7 @@
         width: 350px;
         margin-left: 0px
     }
-
+    
     nav {
         padding-top: 0 !important;
     }
@@ -1049,7 +1056,7 @@
         top: 90px;
         left: 90px;
     }
-
+    
     .swiper-container {
         height: 250px;
     }
@@ -1096,30 +1103,30 @@
         height: 150px;
         width: 200px;
     }
-
+    
     .order-item::after {
         display: none;
     }
-
+    
     .order-item:nth-child(1n):after {
         top: 120px;
     }
-
+    
     .order-item::after {
         transform: rotate(90deg) translateY(-50%);
         top: 100px;
         right: 50%;
     }
-
+    
     .order-item:hover:after {
         right: 50%;
         top: 125px;
     }
-
+    
     .order-item:nth-child(5n):after {
         display: none;
     }
-
+    
     .order-item:nth-child(6n):after {
         display: none;
     }
@@ -1183,6 +1190,13 @@
         width: 90%;
     }
     
+    
+    .catalogue-item:hover .catalogue-item-content {
+        bottom: 0px;
+        left: -5px;
+        box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    }
+    
     .catalogue-select {
         top: 40px;
         left: 70px;
@@ -1212,11 +1226,11 @@
     .swiper-wrapper {
         height: 120px;
     }
-
+    
     .swiper-container {
         height: 210px;
     }
-
+    
     .main-social-links {
         top: 270px;
     }
@@ -1419,9 +1433,9 @@
     .swiper-container {
         width: 100% !important;
     }
-
+    
     .contact-list li:nth-child(4n) {
-       margin: 25px auto 0 auto;
+        margin: 25px auto 0 auto;
     }
 }
 
@@ -1476,14 +1490,14 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
+    
     .catalogue-select select {
         width: 350px !important;
         padding: 10px 20px;
         margin-left: 10px;
         outline: 2px solid #fabe0a;
     }
-
+    
     .catalogue-list {
         margin-top: 30px;
     }
@@ -1519,11 +1533,11 @@
         padding-bottom: 0;
         margin-bottom: 0;
     }
-
+    
     .swiper-container {
         height: 130px;
     }
-
+    
     .swiper-slide {
         height: 50px;
         width: 170px !important;
@@ -1679,7 +1693,7 @@
     .company-item .company-text:nth-child(2n) {
         display: none;
     }
-
+    
     .catalogue-select select {
         width: 300px !important;
     }
@@ -1689,11 +1703,11 @@
     .navbar-second {
         padding-bottom: 0;
     }
-
+    
     .main .container {
         padding-top: 0;
     }
-
+    
     .main-more-btn {
         top: 580px !important;
     }
@@ -1701,12 +1715,12 @@
     .company-item {
         width: 100%;
     }
-
+    
     .order-list {
         flex-direction: column;
         padding: 0 !important;
     }
-
+    
     .order-item {
         width: 120px;
         height: 100%;
@@ -1714,59 +1728,59 @@
         padding: 0 !important;
         margin: 0px 0px 15px 0px !important;
     }
-
+    
     .order-item::after {
         display: block;
         top: 125px !important;
     }
-
+    
     .order-item:hover::after {
         top: 130px;
     }
-
+    
     .order-item .order-text {
         width: 100px;
     }
-
+    
     .order-item:nth-child(1) {
         margin-top: 20px;
         margin-bottom: 40px !important;
     }
-
+    
     
     .order-item:nth-child(1):after {
         top: 150px !important;
     }
-
+    
     
     .order-item:nth-child(3) {
         margin-bottom: 0px !important;
     }
-
+    
     .order-item:nth-child(3):after {
         top: 100px !important;
         left: 50%;
         transform: translateX(-50%) rotate(90deg);
     }
-
+    
     .order-item:nth-child(5) {
         margin-bottom: 0 !important;
     }
-
+    
     .order-item:nth-child(5)::after {
         display: block;
         top: 100px !important;
         margin-bottom: 0 !important;
     }
-
+    
     .order-item:nth-child(6) {
         margin-bottom: 0;
     }
-
+    
     .order-title {
         padding-bottom: 30px;
     }
-
+    
     .order-img {
         width: 50px;
     }
@@ -1787,7 +1801,7 @@
     .catalogue-item {
         width: 120px;
     }
-
+    
     .order .container  {
         padding-bottom: 25px;
     }
@@ -1795,11 +1809,11 @@
     .catalogue-item p {
         text-align: center;
     }
-
+    
     .catalogue-select select {
         width: 250px !important;
     }
-
+    
     .main-btn-1  {
         top: 469px;
         right: 860px;
@@ -1865,14 +1879,14 @@
     .main-line {
         border: none;
     }
-
+    
     .main-btn-1  {
         top: 460px;
         right: 50%;
         transform: rotate(0deg) translateX(-50%);
-       
+        
     }
-
+    
     .main-btn-1 p {
         height: 34px;
     }
@@ -1923,19 +1937,19 @@
         right: 38.37%;
         transform: translateX(-50%);
     }
-
+    
     .main-more-btn {
         margin-top: 100px;
     }
-
+    
     .company .container {
         padding-top: 30px;
     }
-
+    
     .catalogue .container {
         padding-top: 20px;
     }
-
+    
     .catalogue-select select {
         width: 200px !important;
     }
@@ -1943,9 +1957,9 @@
 
 @media (max-width:320px) {
     .main .container {
-      padding-bottom: 30px !important;
+        padding-bottom: 30px !important;
     }
-
+    
     .company .container {
         padding-top: 10px;
     }

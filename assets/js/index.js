@@ -57,8 +57,9 @@ const navCloseBtn = document.getElementById('barCloseBtn');
 navList.style.display = 'none';
 const navBarCloseImg = document.querySelector('.nav-bar__img');
 // main container 
-const mainContainer = document.querySelector('.main .container');
-
+const mainContainer = document.querySelector('.main-text-side');
+// main navbar brand
+const navBarBrand = document.querySelector('.nav');
 
 navBtn.addEventListener('click', e => {
     bodyWrapper.style.display = 'block';
@@ -66,13 +67,15 @@ navBtn.addEventListener('click', e => {
     navBtn.style.display = 'none';
     navList.style.display = 'flex';
     mainContainer.classList.add('blured')
+    navBarBrand.classList.add('blured');
 })
 
 navCloseBtn.addEventListener('click', e => {
     navList.style.display = 'none';
     navCloseBtn.style.display = 'none';
     navBtn.style.display = 'block';
-    mainContainer.classList.remove('blured')
+    mainContainer.classList.remove('blured');
+    navBarBrand.classList.remove('blured');
 })
 
 const mainLine = document.querySelector('.main-line')
@@ -83,6 +86,8 @@ window.addEventListener('click', e => {
         navList.style.display = 'none';
         navCloseBtn.style.display = 'none';
         navBtn.style.display = 'block';
+        mainContainer.classList.remove('blured');
+        navBarBrand.classList.remove('blured');
     }
 });
 
