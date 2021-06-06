@@ -1734,7 +1734,7 @@
     
     .main-btn-3 {
         top: 530px;
-        right: 49.34%;
+        right: 50%;
         flex-direction: column-reverse;
         transform: rotate(0deg) translateX(-50%);
     }
