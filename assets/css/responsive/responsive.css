@@ -1792,18 +1792,31 @@
     .swiper-wrapper {
         width: 220px !important;
     }
+
+    .why .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .why-title {
+        width: 250px;
+    }
     
     .footer ul {
         width: 100%;
-        flex-direction: column;
     }
     
     .catalogue-item {
         width: 120px;
     }
-    
+
     .order .container  {
         padding-bottom: 25px;
+    }
+
+    .brend-title br {
+        display: block;
     }
     
     .catalogue-item p {
@@ -1966,6 +1979,8 @@
 }
 
 @media (max-width: 280px) {
+    
+
     .order-list {
         flex-direction: column;
         padding: 0 !important;

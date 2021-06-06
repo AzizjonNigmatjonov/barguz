@@ -290,25 +290,25 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         1200: {
             slidesPerView: 4,
-        },
-        1180: {
-            slidesPerView: 3,
-        },       
-        960: {
-            slidesPerView: 3,
-        },
-        930: {
-            slidesPerView: 3,
-        },
+        },   
         800: {
-            slidesPerView: 2,
+            slidesPerView: 4,
+        },
+        680: {
+            slidesPerView: 4,
         },
         640: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 15,
         },
+        540: {
+            slidesPerView: 3,
+        },
+        430: {
+            slidesPerView: 3,
+        },
         0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
         }
         
