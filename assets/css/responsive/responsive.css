@@ -1713,7 +1713,7 @@
     
     .main-btn-1.active {
         top: 459px;
-        right: 50%;
+        right: 49%;
         transform: translateX(-50%);
     }
     
