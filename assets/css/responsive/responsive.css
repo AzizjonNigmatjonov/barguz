@@ -1749,12 +1749,12 @@
         flex-direction: column-reverse;
         transform: rotate(0deg) translateX(-50%);
         top: 530px;
-        right: 39.7%;
+        right: 40%;
     }
     
     .main-btn-4.active {
-        top: 529px;
-        right: 38.37%;
+        top: 530px;
+        right: 39%;
         transform: translateX(-50%);
     }
     
