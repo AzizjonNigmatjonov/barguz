@@ -1840,8 +1840,8 @@
         top: 80px;
     }
     
-    .catalogue-select select {
-        width: 300px !important;
+    .catalogue-select  {
+       width: 350px;
     }
 }
 
@@ -1950,8 +1950,8 @@
         text-align: center;
     }
     
-    .catalogue-select select {
-        width: 250px !important;
+    .catalogue-select {
+        width: 300px;
     }
 
     .catalogue-item:hover .catalogue-item-content {
@@ -1980,10 +1980,7 @@
 
     .catalogue-select {
         top: 70px;
-    }
-    
-    .catalogue-select select {
-        width: 200px !important;
+        width: 250px;
     }
 
     .catalogue-item:hover .catalogue-item-content {
@@ -2008,6 +2005,7 @@
 
     .catalogue-select {
         top: 60px;
+        width: 200px;
     }
 
     .order-list {
