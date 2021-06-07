@@ -285,38 +285,12 @@ var swiper = new Swiper(".mySwiper", {
         dynamicBullets: true,
     },
     autoplay: {
-        delay: 4000,
+        delay: 2000,
     },
-    speed: 600,
+    speed: 800,
     lazy: true,
     parallax: true,
     slidesPerView: 'auto',
-    // breakpoints: {
-    //     1200: {
-    //         slidesPerView: 4,
-    //     },   
-    //     800: {
-    //         slidesPerView: 'auto',
-    //     },
-    //     680: {
-    //         slidesPerView: 4,
-    //     },
-    //     640: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 15,
-    //     },
-    //     540: {
-    //         slidesPerView: 3,
-    //     },
-    //     430: {
-    //         slidesPerView: 3,
-    //     },
-    //     0: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 10,
-    //     }
-        
-    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
