@@ -27,6 +27,12 @@
     
 }
 
+@media (max-width: 1460px) {
+    .main-line {
+        right: 120px;
+    }
+}
+
 @media (max-width: 1425px) {
     .main-line {
         right: 50px;
