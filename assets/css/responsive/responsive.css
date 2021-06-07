@@ -1754,7 +1754,7 @@
     }
     
     .main-more-btn {
-        margin-top: 85px;
+        margin-top: 100px;
     }
   
     .company-item {
@@ -1770,15 +1770,9 @@
     }
 }
 
-@media (max-width: 398px) { 
-    .main-more-btn {
-        margin-top: 110px !important;
-    }
-}
-
 @media (max-width: 400px) {
     .main-more-btn{
-        margin-top: 80px;
+        margin-top: 120px;
     }
 
     .company-item {
