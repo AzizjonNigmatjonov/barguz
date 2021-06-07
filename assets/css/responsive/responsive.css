@@ -27,12 +27,6 @@
     
 }
 
-@media (max-width: 1460px) {
-    .main-line {
-        right: 120px;
-    }
-}
-
 @media (max-width: 1425px) {
     .main-line {
         right: 50px;
@@ -42,21 +36,17 @@
     }
     
     .main-line {
-        right: 120px;
+        right: 90px;
     }
 }
 
 @media (max-width: 1400px) {
     .main-line {
-        right: 140px;
+        right: 110px;
     }
 }
 
 @media (max-width: 1380px) {
-    .main-line {
-        right: 80px;
-    }
-    
     .main-line {
         width: 480px;
         height: 480px;
@@ -115,7 +105,7 @@
     
     .main-img.second {
         top: 80px;
-        width: 460px;
+        width: 360px;
     }
     
     .main-img.third {
@@ -124,7 +114,7 @@
     
     .main-img.four {
         top: 80px;
-        width: 460px;
+        width: 360px;
     }
     
 }

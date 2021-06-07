@@ -149,9 +149,9 @@ header .wrapper {
 }
 
 .main-img.second {
-    width: 510px;
-    right: -67px;
-    top: 60px;
+    width: 420px;
+    right: -40px;
+    top: 80px;
     display: inline-block;
     animation: open 0.2s ease;
 }
@@ -166,9 +166,9 @@ header .wrapper {
 }
 
 .main-img.four {
-    width: 510px;
-    right: -67px;
-    top: 60px;
+    width: 420px;
+    right: -40px;
+    top: 80px;
     display: inline-block;
     animation: open 0.2s ease;
 }
@@ -182,7 +182,7 @@ header .wrapper {
     border-top: 2px solid transparent;
     transform: rotate(-15deg);
     position: relative;
-    right: 90px;
+    right: 110px;
     top: 0px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
