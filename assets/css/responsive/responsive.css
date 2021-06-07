@@ -1510,7 +1510,7 @@
     }
     
     .catalogue-item:last-child {
-        transform: translateX(68%);
+        transform: translateX(80%);
     }
 
     .catalogue-select {
@@ -1837,7 +1837,7 @@
     }
 
     .catalogue-item:last-child {
-        transform: translateX(60%);
+        transform: translateX(61%);
     }
 
     .catalogue-select {
@@ -1947,7 +1947,7 @@
     }
 
     .catalogue-item:last-child {
-        transform: translateX(70%);
+        transform: translateX(68%);
     }
     
     .catalogue-item p {
@@ -1971,7 +1971,7 @@
     }
 
     .catalogue-item:last-child {
-        transform: translateX(60%);
+        transform: translateX(64%);
     }
 
     .catalogue-title {
