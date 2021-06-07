@@ -149,7 +149,7 @@ header .wrapper {
 }
 
 .main-img.second {
-    width: 420px;
+    width: 450px;
     right: -40px;
     top: 80px;
     display: inline-block;
@@ -328,7 +328,7 @@ header .wrapper {
 }
 
 .company-item img{
-    width: 800px;
+    width: 500px;
     height: auto;
     margin-left: 20px;
 }
