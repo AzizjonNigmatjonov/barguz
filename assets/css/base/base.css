@@ -363,15 +363,11 @@ header .wrapper {
     width: 80%;
     height: 40px;
     transition: 0.4s;
-    overflow: scroll;
+    overflow: hidden;
     box-shadow: 0 1px 55px rgba(0,0,0,.1);
     color: #303030;
     border-radius: 12px;
     opacity: 0;
-}
-
-.catalogue-item-content::-webkit-scrollbar {
-    display: none;
 }
 
 .catalogue-item:hover .catalogue-item-content {
