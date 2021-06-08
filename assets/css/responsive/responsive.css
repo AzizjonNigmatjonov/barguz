@@ -4,7 +4,7 @@
     .container {
         width: 1320px;
     }
-    
+
     .order-item {
         width: 200px;
     }
@@ -121,13 +121,14 @@
 
 @media (max-width: 1360px) {
     .main-line {
-        right: 180px;
+        right: 160px;
     }
     .main-title {
         font-size: 45px;
+        line-height: 50px;
     }
     .main-subtext {
-        width: 400px;
+        width: 450px;
     }
 }
 
@@ -137,7 +138,11 @@
     }
     
     .main-line {
-        right: 140px;
+        right: 90px;
+    }
+
+    .main-subtext {
+        width: 360px;
     }
     
     .catalogue-list {
@@ -198,6 +203,8 @@
     
     .main-title {
         font-size: 40px;
+        line-height: 45px;
+        width: 400px
     }
     
     .main-subtext {
@@ -245,6 +252,7 @@
     }
     
     .main .container {
+        padding-top: 0;
         padding-bottom: 180px;
     }
     
@@ -255,6 +263,7 @@
     }
     
     .main-title {
+        font-size: 55px;
         width: 100%;
         text-align: center;
     }
@@ -266,6 +275,7 @@
     .main-subtext {
         width: 700px;
         text-align: center;
+        margin: 0 auto;
     }
     
     .main-text-side {
@@ -278,7 +288,7 @@
         border-left: 2px solid transparent;
         border-top: 2px solid transparent;
         width: 1500px;
-        top: -40px;
+        top: 0px;
     }
     
     .main-img.first {
@@ -400,14 +410,14 @@
     
     .main-more-btn {
         position: absolute;
-        top: 670px;
+        top: 730px;
         transform: translateX(50%);
         right: 50%;
     }
     
     .main-social-links {
         position: absolute;
-        top: 730px;
+        top: 800px;
         transform: translateX(50%);
         right: 50%;
         z-index: 1;
@@ -539,7 +549,22 @@
 }
 
 @media (max-width: 1120px) {
-    
+    .nav-brand-img {
+        width: 100px;
+    }
+
+    .main-title {
+        font-size: 45px;
+    }
+
+    .main-subtext {
+        padding-bottom: 0;
+    }
+
+    .main-more-btn {
+        top: 690px;
+    }
+
     .company-item:nth-child(2n) {
         width: 600px;
     }
@@ -654,9 +679,59 @@
     .main-subtext {
         width: 500px;
     }
+
+     .main-btn-1  {
+        top: 460px;
+        right: 940px;
+        transform: rotate(5deg);
+    }
+    
+    .main-btn-1.active {
+        top: 454px;
+        right: 925px;
+        transform: rotate(5deg);
+    }
+    
+    .main-btn-2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        top: 472px;
+        right: 780px;
+        transform: rotate(2deg);
+    }
+    
+    .main-btn-2.active {
+        top: 465px;
+        right: 764px;
+    }
+    
+    .main-btn-3 {
+        top: 472px;
+        right: 620px;
+        flex-direction: column-reverse;
+        transform: rotate(-1deg);
+    }
+    
+    .main-btn-3.active {
+        top: 465px;
+        right: 605px;
+    }
+    
+    .main-btn-4 {
+        transform: rotate(-6deg);
+        top: 460px;
+        right: 460px;
+    }
+
+    .main-btn-4.active {
+        top: 453px;
+        right: 445px;
+    }
+    
     
     .main-more-btn {
-        top: 730px;
+        top: 750px;
         z-index: 1;
     }
     
@@ -863,7 +938,7 @@
     }
     
     .main-more-btn {
-        top: 720px;
+        top: 680px;
     }
     
     .company-item:nth-child(2n) {
@@ -973,7 +1048,7 @@
     }
     
     .main-line {
-        top: -120px;
+        top: -70px;
     }
     
     .main-img.first {
@@ -997,7 +1072,7 @@
     }
     
     .main-more-btn {
-        top: 660px;
+        top: 680px;
     }
     
     .catalogue .container {
@@ -1248,57 +1323,88 @@
         padding: 0;
     }
 
+    .nav .container {
+        padding-bottom: 0;
+    }
+
+    .navbar-second{
+        padding-bottom: 0;
+    }
+
+    .main .container {
+        padding-bottom: 150px;
+    }
+
+    .main-subtext {
+        padding-top: 15px;
+    }
+
+    .main-line {
+        border: none;
+        top: -50px;
+    }
+    
     .main-btn-1  {
-        top: 467px;
-        right: 880px;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(4deg);
+        top: 460px;
+        left: 42%;
+        transform: rotate(0deg) translateX(-50%);
+        
+    }
+    
+    .main-image__btn p {
+        padding-top: 4px;
+        height: 30px;
     }
     
     .main-btn-1.active {
-        top: 460px;
-        right: 864px;
-        transform: rotate(3deg);
+        top: 445px;
+        left: 42%;
+        transform: translateX(-50%);
     }
     
     .main-btn-2 {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        top: 472px;
-        right: 760px;
-        transform: rotate(1deg);
+        top: 460px;
+        right: 37%;
+        transform: rotate(0deg) translateX(-50%);
     }
     
     .main-btn-2.active {
-        top: 465px;
-        right: 742px;
+        top: 445px;
+        right: 35%;
+        transform: translateX(-50%);
     }
     
     .main-btn-3 {
-        top: 472px;
-        right: 640px;
+        top: 540px;
+        left: 45%;
         flex-direction: column-reverse;
-        transform: rotate(-1deg);
+        transform: rotate(0deg) translateX(-50%);
     }
     
     .main-btn-3.active {
-        top: 465px;
-        right: 624px;
+        top: 525px;
+        right: 52%;
+        transform: translateX(-50%);
     }
     
     .main-btn-4 {
         flex-direction: column-reverse;
-        transform: rotate(-5deg);
-        top: 465px;
-        right: 520px;
+        transform: rotate(0deg) translateX(-50%);
+        top: 540px;
+        right: 39%;
     }
     
     .main-btn-4.active {
-        top: 458px;
-        right: 502px;
+        top: 525px;
+        right: 37%;
+        transform: translateX(-50%);
+    }
+
+    .main-more-btn {
+        top: 750px;
     }
     
     .company-img {
@@ -1519,7 +1625,7 @@
 
 @media (max-width: 500px) {
     .main .container {
-        padding: 0px 0px 0px 0px !important;
+        padding: 0px 0px 50px 0px !important;
     }
     
     .main-list {
@@ -1559,10 +1665,6 @@
         top: 220px;
     }
     
-    .main-more-btn {
-        top: 630px;
-    }
-    
     .main-image__btn.active span {
         width: 12px;
         height: 12px;
@@ -1570,66 +1672,67 @@
     }
     
     .main-image__btn.active p {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .main-image__btn p {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .main-btn-1  {
-        top: 469px;
-        right: 870px;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(4deg);
+        top: 480px;
+        left: 44%;
+        transform: rotate(0deg) translateX(-50%);
+        
     }
     
     .main-btn-1.active {
-        top: 465px;
-        right: 859px;
-        transform: rotate(3deg);
+        top: 470px;
+        left: 44%;
+        transform: translateX(-50%);
     }
     
     .main-btn-2 {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        top: 472px;
-        right: 765px;
-        transform: rotate(1deg);
+        top: 480px;
+        right: 38%;
+        transform: rotate(0deg) translateX(-50%);
     }
     
     .main-btn-2.active {
-        top: 469px;
-        right: 753px;
+        top: 470px;
+        right: 36.5%;
+        transform: translateX(-50%);
     }
     
     .main-btn-3 {
-        top: 472px;
-        right: 655px;
+        top: 560px;
+        left: 45%;
         flex-direction: column-reverse;
-        transform: rotate(-1deg);
+        transform: rotate(0deg) translateX(-50%);
     }
     
     .main-btn-3.active {
-        top: 469px;
-        right: 646px;
+        top: 550px;
+        right: 52%;
+        transform: translateX(-50%);
     }
     
     .main-btn-4 {
         flex-direction: column-reverse;
-        transform: rotate(-5deg);
-        top: 465px;
-        right: 550px;
+        transform: rotate(0deg) translateX(-50%);
+        top: 560px;
+        right: 38%;
     }
     
     .main-btn-4.active {
-        top: 465px;
-        right: 540px;
+        top: 550px;
+        right: 36.5%;
+        transform: translateX(-50%);
     }
-    
+
     .main-title {
         width: 100%;
     }
@@ -1639,7 +1742,7 @@
     }
     
     .main-more-btn {
-        top: 610px;
+        top: 630px !important;
     }
 
     .company-img {
@@ -1715,12 +1818,20 @@
 }
 
 @media (max-width: 470px) {
+    .main-line {
+        top: -175px;
+    }
+
     .catalogue-item:last-child {
         transform: translateX(68%);
     }
 }
 
 @media (max-width: 430px) {
+    .main .container {
+        padding-bottom: 0;
+    }
+
     .main-text-side {
         display: flex;
         flex-direction: column;
@@ -1729,6 +1840,7 @@
 
     .main-title {
         width: 350px;
+        font-size: 43px;
     }
 
     .navbar-second {
@@ -1748,70 +1860,14 @@
 
     .main-line {
         border: none;
+        top: -180px;
     }
     
-    .main-btn-1  {
-        top: 460px;
-        right: 50%;
-        transform: rotate(0deg) translateX(-50%);
-        
-    }
-    
-    .main-btn-1 p {
-        height: 34px;
-    }
-    
-    .main-btn-1.active {
-        top: 460px;
-        right: 49%;
-        transform: translateX(-50%);
-    }
-    
-    .main-btn-2 {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        top: 460px;
-        right: 40%;
-        transform: rotate(0deg) translateX(-50%);
-    }
-    
-    .main-btn-2.active {
-        top: 460px;
-        right: 39%;
-        transform: translateX(-50%);
-    }
-    
-    .main-btn-3 {
-        top: 530px;
-        right: 50%;
-        flex-direction: column-reverse;
-        transform: rotate(0deg) translateX(-50%);
-    }
-    
-    .main-btn-3.active {
-        top: 530px;
-        right: 49%;
-        transform: translateX(-50%);
-    }
-    
-    .main-btn-4 {
-        flex-direction: column-reverse;
-        transform: rotate(0deg) translateX(-50%);
-        top: 530px;
-        right: 40%;
-    }
-    
-    .main-btn-4.active {
-        top: 530px;
-        right: 39%;
-        transform: translateX(-50%);
-    }
-    
-    .main-more-btn {
-        margin-top: 110px;
-    }
 
+    .main-more-btn {
+        top: 700px !important;
+    }
+    
     .order .container {
         padding: 35px 0px 0px 0px;
     }
@@ -1846,8 +1902,59 @@
 }
 
 @media (max-width: 400px) {
-    .main-more-btn{
-        margin-top: 130px;
+    .main-line {
+        top: -190px;
+    }
+
+    .main-btn-1 {
+        left: 45%;
+    }
+
+    .main-btn-1.active {
+        top: 470px;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+
+    .main-btn-2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        top: 480px;
+        right: 39%;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-2.active {
+        top: 470px;
+        right: 37.7%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-3 {
+        top: 560px;
+        left: 45.2%;
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-3.active {
+        top: 550px;
+        right: 52%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-4 {
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+        top: 560px;
+        right: 38.27%;
+    }
+    
+    .main-btn-4.active {
+        top: 550px;
+        right: 37%;
+        transform: translateX(-50%);
     }
 
     .company-item {
@@ -1962,6 +2069,57 @@
 }
 
 @media (max-width: 360px) {
+    .main-btn-1 {
+        left: 45%;
+    }
+
+    .main-btn-1.active {
+        top: 470px;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+
+    .main-btn-2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        top: 480px;
+        right: 39%;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-2.active {
+        top: 470px;
+        right: 37.7%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-3 {
+        top: 560px;
+        left: 45.2%;
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-3.active {
+        top: 550px;
+        right: 52%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-4 {
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+        top: 560px;
+        right: 38.7%;
+    }
+    
+    .main-btn-4.active {
+        top: 550px;
+        right: 37.3%;
+        transform: translateX(-50%);
+    }
+
     .company-item:nth-child(2n) {
         padding: 30px 0px 20px 0px;
     }
@@ -1991,8 +2149,63 @@
 }
 
 @media (max-width: 280px) {
+    .main-subtext {
+        width: 220px;
+    }
+
+    .main-btn-1 {
+        left: 46%;
+    }
+
+    .main-btn-1.active {
+        top: 470px;
+        left: 46%;
+        transform: translateX(-50%);
+    }
+
+    .main-btn-2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        top: 480px;
+        right: 40%;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-2.active {
+        top: 470px;
+        right: 38.7%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-3 {
+        top: 560px;
+        left: 46.1%;
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-3.active {
+        top: 550px;
+        right: 52%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-4 {
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+        top: 560px;
+        right: 39.5%;
+    }
+    
+    .main-btn-4.active {
+        top: 550px;
+        right: 38.2%;
+        transform: translateX(-50%);
+    }
+
     .main-more-btn {
-        margin-top: 120px;
+        top: 740px !important;
     }
 
     .company .container {
