@@ -620,63 +620,6 @@ header .wrapper {
     width: 50px;
 }
 
-
-
-/* .catalogue-select select {
-    background: #fff;
-}
-
-.catalogue-select-header {
-    width: 100%;
-    padding: 7px 20px;
-    border: 1px solid #fabe0a;
-    position: relative;
-}
-
-.catalogue-select-header::after {
-    content: '';
-    background-image: url('../../images/next.svg');
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-}
-
-.catalogue-select-header:hover::after {
-    transform: rotate(90deg);
-    top: 30%;
-    right: 20px;
-}
-
-.catalogue-select-content {
-    border: 1px solid red;
-    width: 100%;
-    padding:  10px 0;
-    position: absolute;
-    top: 45px;
-    background-color: #fff;
-    z-index: 1;
-    animation: popdown 2s ease 2s forwards;
-}
-
-.catalogue {
-    overflow: hidden;
-}
-
-.catalogue-select-content li {
-    padding: 10px 0px;
-    width: 100%;
-    text-align: center;
-}
-
-.catalogue-select-content li:hover {
-    background-color: red;
-} */
-
-
 .order {
     background-color: #05285a;
 }
