@@ -465,6 +465,7 @@
     .company-item:nth-child(1) p {
         width: 100% !important;
         padding-top: 30px;
+        text-align: start;
     }
 
     .company-item:nth-child(2) {
@@ -490,6 +491,10 @@
     
     .company-text-span-1 {
         margin-left: 50px !important;
+    }
+
+    .catalogue-list {
+        padding-top: 40px;
     }
     
     .catalogue-title  {
@@ -860,6 +865,10 @@
         right: 168px;
         top: 845px;
     }
+
+    .catalogue-order-link {
+        margin-top: 40px;
+    }
     
     .why-separator {
         flex-direction: column;
@@ -1112,6 +1121,10 @@
         display: inline-block;
         top: 90px;
         left: 90px;
+    }
+
+    .catalogue-order-link {
+        margin-top: 10px;
     }
     
     .swiper-container {

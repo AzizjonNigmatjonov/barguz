@@ -1,32 +1,5 @@
 /* base css properties */
 
-.catalogue {
-    display: none;
-}
-.order {
-    display: none;
-}
-.why {
-    display: none;
-}
-.brend {
-    display: none;
-}
-.questions {
-    display: none;
-}
-.contact {
-    display: none;
-}
-.swiper-container {
-    display: none;
-}
-.footer {
-    display: none;
-}
-
-
-
 html {
     scroll-behavior: smooth;
 }
