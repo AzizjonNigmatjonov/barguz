@@ -586,7 +586,38 @@ header .wrapper {
 }
 
 .catalogue-select-list li:hover {
-    background-color: #fafafa;
+    background-color: #F1F1F1;
+}
+
+.catalogue-select-list p {
+    border-bottom: 0.5px solid #bbb;
+    width: 40px;
+    transition: 0.4s;
+    padding-bottom: 5px;
+}
+
+.catalogue-select-list li:hover p.first {
+    width: 70px;
+}
+
+.catalogue-select-list li:hover p.peregruz {
+    width: 95px;
+}
+
+.catalogue-select-list li:hover p.buld {
+    width: 93px;
+}
+
+.catalogue-select-list li:hover p.eksa {
+    width: 100px;
+}
+
+.catalogue-select-list li:hover p.comb {
+    width: 80px;
+}
+
+.catalogue-select-list li:hover p.kat {
+    width: 50px;
 }
 
 
