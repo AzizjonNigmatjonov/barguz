@@ -1,9 +1,5 @@
 /* base css properties */
 
-.company {
-    display: none;
-}
-
 .catalogue {
     display: none;
 }
@@ -354,10 +350,11 @@ header .wrapper {
     margin-left: 47px;
 }
 
-.company-item img{
+.company-item img {
     width: 500px;
     height: auto;
     margin-left: 20px;
+    padding-bottom: 50px;
 }
 
 .catalogue-list.active {
