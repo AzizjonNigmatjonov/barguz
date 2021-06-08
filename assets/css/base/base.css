@@ -330,6 +330,8 @@ header .wrapper {
     padding-bottom: 50px;
 }
 
+
+
 .catalogue-list.active {
     display: grid;
     animation: open 0.2s ease;
@@ -494,27 +496,106 @@ header .wrapper {
     background-color: #fabe0a;
 }
 
-.catalogue-select {
-    background: #fff;
-    border: none;
-    padding: 0 1em 0 0;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: inherit;
-    line-height: inherit;
-    color: #303030;
+.catalogue-select-wrapper {
+    width: 100%;
+    height: 100%;
     position: absolute;
+    top: 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
     display: none;
 }
 
-.catalogue-select2 {
-    width: 300px;
-    margin: 0 auto;
+.catalogue-select-wrapper.active {
+    display: block;
+}
+
+
+.catalogue-select-place {
     position: relative;
 }
 
-.catalogue-select select {
+.catalogue-select-content {
+    width: 350px;
+    position: absolute;
+    top: 67p;
+    left: 50%;
+    transform: translateX(-50%);
+}  
+
+.catalogue-select-header {
+    border: 1px solid #fabe0a;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    display: none;
+}
+
+.catalogue-selector-text {
+    padding: 10px 25px;
+    color: #303030;
+    position: relative;
+}
+
+.catalogue-selector-text::after {
+    content: '';
+    background-image: url('../../images/next.svg');
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 30px;
+    top: 17px;
+    transition: 0.2s;
+}
+
+.catalogue-selector-text:hover:after {
+    right: 25px;
+}
+
+.catalogue-selector-text.active::after{
+    transform: rotate(90deg);
+}
+
+.catalogue-selector-subtext {
+    color: #303030fa;
+}
+
+.catalogue-select-list {
+    border: 1px solid #fabe0a;
+    padding: 15px 0px;
+    position: absolute;
+    width: 350px;
+    display: none;
+    background-color: #fff;
+    animation: catalogueSelector 1s ease delay forwards;
+}
+
+.catalogue-select-list.active {
+    display: block;
+    animation: catalogueSelector 0.7s ease forwards;
+}
+
+.catalogue-select-list.remove {
+    display: none;
+    animation: catalogueSelectorClose 0.7s ease backwards;
+}
+
+.catalogue-select-list li {
+    padding: 10px 30px;
+}
+
+.catalogue-select-list li:hover {
+    background-color: #fafafa;
+}
+
+
+
+/* .catalogue-select select {
     background: #fff;
 }
 
@@ -566,7 +647,8 @@ header .wrapper {
 
 .catalogue-select-content li:hover {
     background-color: red;
-}
+} */
+
 
 .order {
     background-color: #05285a;
@@ -840,6 +922,29 @@ header .wrapper {
     }
 }
 
+@keyframes catalogueSelector {
+    0% {
+        opacity: 0;
+        top: -300px;
+    }
+    100% {
+        opacity: 1;
+        top: 39px;
+    }
+}
+
+@keyframes catalogueSelectorClose {
+    0% {
+        opacity: 1;
+        top: 31px;
+    }
+    100% {
+        opacity: 0;
+        top: -300px;
+    }
+}
+
+
 
 @keyframes slidDown {
     0% {
@@ -859,8 +964,7 @@ header .wrapper {
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(
-    }
-    50% {
+    } 50% {
         transform: rotate(90degdeg);
         -webkit-transform: rotate(90degdeg);
         -moz-transform: rotate(90degdeg);
@@ -884,3 +988,5 @@ header .wrapper {
         opacity: 1;
     }
 }
+
+
