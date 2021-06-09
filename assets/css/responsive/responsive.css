@@ -1976,6 +1976,10 @@
         padding: 35px 0px 0px 0px;
     }
 
+    .order-title {
+        padding-top: 25px;
+    }
+
     .company .container {
         padding-top: 30px;
     }
@@ -2015,6 +2019,10 @@
 
     .catalogue-select-content  {
         width: 350px;
+    }
+
+    .why .container {
+        padding-top: 40px;
     }
     
 }
@@ -2127,7 +2135,7 @@
     }
     
     .order-item:nth-child(6) {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
     
     .order-title {
@@ -2150,6 +2158,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 30px;
     } 
 
     .why-title {
@@ -2162,10 +2171,6 @@
     
     .catalogue-item {
         width: 120px;
-    }
-
-    .order .container  {
-        padding-bottom: 25px;
     }
 
     .brend-title br {
@@ -2283,6 +2288,10 @@
     .catalogue-select-content  {
         width: 275px;
         top: 0px;
+    }
+
+    .why .container {
+        padding-top: 30px;
     }
 }
 
@@ -2411,5 +2420,9 @@
 
     .catalogue-item:last-child {
         transform: translateX(45%);
+    }
+
+    .why .container {
+        padding-top: 30px;
     }
 }
