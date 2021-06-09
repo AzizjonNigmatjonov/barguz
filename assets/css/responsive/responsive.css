@@ -530,10 +530,6 @@
         height: 100px;
     }
     
-    .order-item:nth-child(3)::after {
-        transform: rotate(90deg);
-    }
-    
     .questions {
         padding-top: 20px;
         position: relative;
@@ -739,6 +735,10 @@
         display: none;
     }
 
+    .company .container {
+        padding-top: 60px;
+    }
+
     .company-list {
         flex-direction: column-reverse;
     }
@@ -749,6 +749,14 @@
     
     .company-item p {
         width: 500px !important;
+    }
+
+    .company-title {
+        padding-bottom: 40px;
+    }
+
+    .company-text {
+        text-align: center !important;
     }
     
     .company-text span{
@@ -769,7 +777,7 @@
     
     .catalogue .container {
         padding-top: 80px;
-        padding-bottom: 170px;
+        padding-bottom: 140px;
     }
     
     .catalogue-slider-line  {
@@ -791,7 +799,7 @@
     }
     
     .catalogue-image__btn p {
-        margin-top: 5px;
+        margin-top: 17px;
     }
     
     .catalogue-btn-0 {
@@ -867,7 +875,17 @@
     }
 
     .catalogue-order-link {
-        margin-top: 40px;
+        margin-top: 70px;
+    }
+
+    .order .container {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .why .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     
     .why-separator {
@@ -877,6 +895,15 @@
     .why-list {
         margin-left: 0;
     }
+
+    .brend .container {
+        padding: 0px !important;
+    }
+
+    .swiper-container {
+       padding-top: 20px !important;
+       padding-bottom: 0 !important;
+    }
     
     .swiper-slide {
         font-size: 18px;
@@ -885,6 +912,27 @@
     
     .brend-list {
         width: 100%;
+    }
+
+    .questions {
+        padding-top: 60px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .questions form {
+        padding-bottom: 0;
+    }
+
+    .questions .container {
+        padding-bottom: 70px;
+    }
+
+    .contact .container {
+        padding: 0 0 90px 0 !important;
+    }
+
+    .contact-title {
+        padding-bottom: 0;
     }
     
     .contact-social {
@@ -909,6 +957,10 @@
     
     .questions-img {
         display: none;
+    }
+
+    .footer .container {
+        padding-bottom: 80px;
     }
 }
 
@@ -1329,6 +1381,7 @@
     }
     .why-img {
         width: 400px;
+        display: none;
     }
     .contact-map iframe {
         width: 450px;
@@ -1907,8 +1960,22 @@
 }
 
 @media (max-width: 470px) {
+    .main-title {
+        font-size: 40px;
+    }
+
     .main-line {
         top: -175px;
+    }
+
+    .main-image__btn p {
+        color: #303030aa;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .main-more-btn {
+        top: 650px !important;
     }
 
     .company-item:nth-child(2) {

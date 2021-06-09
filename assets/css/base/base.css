@@ -320,7 +320,6 @@ header .wrapper {
     color: #303030aa;
     font-weight: 500;
     font-size: 17px;
-    letter-spacing: 0.7px;
 }
 
 .main-image__btn.active span {
@@ -614,7 +613,6 @@ header .wrapper {
     display: block;
 }
 
-
 .catalogue-select-place {
     position: relative;
 }
@@ -674,7 +672,7 @@ header .wrapper {
     position: absolute;
     width: 350px;
     display: none;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .98);
     animation: catalogueSelector 1s ease delay forwards;
 }
 
