@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Muller Narrow Demo';
+    src: url('MullerNarrowDemo-Light.woff2') format('woff2'),
+        url('MullerNarrowDemo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller Narrow Demo ExBold It';
+    src: url('MullerNarrowDemo-ExtraBoldItalic.woff2') format('woff2'),
+        url('MullerNarrowDemo-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller Narrow Demo';
+    src: url('MullerNarrowDemo-ExtraBold.woff2') format('woff2'),
+        url('MullerNarrowDemo-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller Demo';
+    src: url('MullerDemo-Thin.woff2') format('woff2'),
+        url('MullerDemo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller Narrow Demo';
+    src: url('MullerNarrowDemo-LightItalic.woff2') format('woff2'),
+        url('MullerNarrowDemo-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller Demo';
+    src: url('MullerDemo-ExtraBold.woff2') format('woff2'),
+        url('MullerDemo-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
