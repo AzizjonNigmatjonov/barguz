@@ -437,18 +437,22 @@ $(function() {
 
         var scrolled = $(document).scrollTop();
 
-        if(scrolled > navHeight) {
-            $('header').addClass('sticky')
-        } else {
-            $('.header').removeClass('sticky')
-        }
+        if (scroll) {
+            if(scrolled > navHeight) {
+                $('header').addClass('sticky')
+            } else {
+                $('.header').removeClass('sticky')
+            }
+        } 
 
-        if (scrolled > scroll) {
-            $('header').removeClass('sticky')
-        } else {
-            $('header').addClass('sticky')
+        if (scroll) {
+            if (scrolled > scroll) {
+                $('header').removeClass('sticky')
+            } else {
+                $('header').addClass('sticky')
+            }
+    
         }
-
         scroll = $(document).scrollTop();
 
     })
