@@ -699,6 +699,7 @@
     
     .navbar-second {
         z-index: 2;
+        padding: 15px 0px;
     }
     
     header .nav {
@@ -715,7 +716,7 @@
     }
 
     .main {
-        margin-top: 0;
+        margin-top: 70px;
     }
     
     .main-text-side.blured {
@@ -1630,6 +1631,14 @@
         width: 100%;
         padding: 30px 30px;
     }
+
+    header .container {
+        padding-bottom: 0;
+    }
+
+    header.header.sticky {
+        padding-bottom: 0;
+    }
     
     .main-hidden-image .swiper-slide img:nth-child(1n) {
         width: 300px !important;
@@ -1748,7 +1757,8 @@
     }
 
     .navbar-second{
-        padding-bottom: 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     .main .container {
@@ -2386,6 +2396,10 @@
 }
 
 @media (max-width: 430px) {
+    .navbar-second {
+        padding-top: 10px !important;
+    }
+
     .main .container {
         padding-bottom:  0;
     }
