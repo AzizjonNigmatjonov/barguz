@@ -2401,11 +2401,15 @@
 
 @media (max-width: 430px) {
     .main {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .navbar-second {
-        padding-top: 10px !important;
+        padding-top: 10px 0 0px 0 !important;
+    }
+
+    header.sticky {
+        padding-bottom: 30px;
     }
 
     .main .container {
