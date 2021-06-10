@@ -429,7 +429,6 @@ catalogueSecectText.addEventListener('click', e => {
 
 
 $(function() {
-     
     var scroll = $(document).scrollTop();
     var navHeight = $('header').outerHeight();
 

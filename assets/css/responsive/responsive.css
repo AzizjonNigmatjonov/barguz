@@ -677,17 +677,26 @@
         height: auto;
     }
 
-    header {
+    .header.sticky {
         position: relative;
         margin: 0 auto;
-        transform: translateX(-50%);
-        left: 50%;
-        z-index: 1000;
+        transform: translateX(0%);
+        left: 0;
+        z-index: 1;
         background-color: #fff;
-        width: 100%;
-        top: 0;
-    }    
+        width: 0;
+        animation: none 0.1s ease forwards;
+    }
 
+    @keyframes none {
+        0% {
+            top: 0;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    
     .navbar-second {
         z-index: 2;
     }
