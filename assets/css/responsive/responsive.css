@@ -1479,6 +1479,8 @@
     
     .catalogue-text {
         font-size: 15px;
+        text-align: center;
+        line-height: 21px;
     }
     
     .catalogue-slider-line {
@@ -2710,6 +2712,7 @@
     
     .catalogue-item p {
         text-align: center;
+        font-size: 13px;
     }
 
     .catalogue-item:hover .catalogue-item-content {
@@ -3032,6 +3035,11 @@
 
     .catalogue-item {
         width: 100px;
+    }
+
+    .catalogue-item p {
+        text-align: center;
+        font-size: 11px;
     }
 
     .catalogue-text {
