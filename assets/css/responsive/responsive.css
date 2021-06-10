@@ -2817,7 +2817,7 @@
     }
 
     .company .company-item:nth-child(2n) img {
-        width: 100% !important;
+        width: 280px !important;
     }
 
     .company-text {
@@ -2842,6 +2842,15 @@
         padding: 0px;
         width: 110%;
         left: 0;
+        padding: 10px 3px 10px 3px;
+    }
+
+    .catalogue-item-content h1 {
+        font-size: 15px;
+    }
+
+    .catalogue-item-content p {
+        padding-top: 5px;
     }
 
     .catalogue-select-header {
@@ -3011,6 +3020,10 @@
 
     .company .container {
         padding-top: 0px;
+    }
+
+    .company .company-item:nth-child(2n) img {
+        width: 100% !important;
     }
 
     .catalogue .container {
