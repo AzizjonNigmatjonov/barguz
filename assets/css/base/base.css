@@ -679,14 +679,11 @@ header .wrapper {
     right: 30px;
     top: 17px;
     transition: 0.2s;
-}
-
-.catalogue-selector-text:hover:after {
-    right: 25px;
+    transform: rotate(90deg);
 }
 
 .catalogue-selector-text.active::after{
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 .catalogue-selector-subtext {
