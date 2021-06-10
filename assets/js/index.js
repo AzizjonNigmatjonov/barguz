@@ -77,6 +77,7 @@ navCloseBtn.addEventListener('click', e => {
     navBtn.style.display = 'block';
     // mainContainer.classList.remove('blured');
     navBarBrand.classList.remove('blured');
+    bodyWrapper.style.display = 'none';
 })
 
 const mainLine = document.querySelector('.main-line')
@@ -169,8 +170,6 @@ catalogChangeBtns.forEach(element => {
         }
     })
 })
-
-console.log(catalogChangeBtnWrapper);
 
 catalogChangeBtnWrapper.forEach(element => {
     element.addEventListener('click', e => {
@@ -426,4 +425,32 @@ catalogueSecectText.addEventListener('click', e => {
             }
         })
     })
+})
+
+
+$(function() {
+     
+    var scroll = $(document).scrollTop();
+    var navHeight = $('header').outerHeight();
+
+    $(window).scroll(function() {
+
+        var scrolled = $(document).scrollTop();
+
+        if(scrolled > navHeight) {
+            $('header').addClass('sticky')
+        } else {
+            $('.header').removeClass('sticky')
+        }
+
+        if (scrolled > scroll) {
+            $('header').removeClass('sticky')
+        } else {
+            $('header').addClass('sticky')
+        }
+
+        scroll = $(document).scrollTop();
+
+    })
+
 })

@@ -75,6 +75,33 @@ html {
     margin: 0 auto;
 }
 
+header.animate {
+    top: -71px;
+}
+
+header.sticky {
+    position: fixed;    
+    transform: translateX(0%);
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    padding-bottom: 20px;
+    transition: 0.2s;
+    animation: stickyBottom 0.6s ease forwards;
+}
+
+@keyframes stickyBottom {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 header .container {
     padding-top: 10px;
 }
@@ -84,9 +111,9 @@ header .container {
 }
 
 .nav-link {
-    color: #303030;
+    color: #303030aa;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.2s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -96,7 +123,8 @@ header .container {
 }
 
 .nav-link:hover {
-    color: #303030aa;
+    color: #303030;
+    transform: scale(1.1);
 }
 
 .nav-contact__img {
@@ -104,13 +132,14 @@ header .container {
 }
 
 .nav-contact__text {
-    color: #303030;
+    color: #303030aa;
     letter-spacing: 1.5px;
     font-weight: 500;
+    transition: 0.2s;
 }
 
 .nav-contact__text:hover {
-    color: #303030aa;
+    color: #303030;
 }
 
 .navbar-second {
@@ -141,6 +170,10 @@ header .wrapper {
     height: 100%;
     margin: 0 auto;
     background-color: transparent;
+}
+
+.main {
+    margin-top: 120px;
 }
 
 .main-text-side {
@@ -281,7 +314,7 @@ header .wrapper {
 
 .main-image__btn-circle {
     background-color: #05285a;
-    box-shadow: 0px 0px 0px 5px #fabe0a54;
+    box-shadow: 0px 0px 0px 5px rgba(250, 190, 10, .40);;
 }
 
 .main-btn-1 {
@@ -321,6 +354,10 @@ header .wrapper {
     font-weight: 500;
     font-size: 17px;
 }
+
+/* .main-image__btn.active span {
+    rgba(250, 190, 10, .70);
+} */
 
 .main-image__btn.active span {
     width: 20px;
@@ -415,8 +452,6 @@ header .wrapper {
     margin-left: 100px;
     padding-bottom: 50px;
 }
-
-
 
 .catalogue-list.active {
     display: grid;
@@ -573,7 +608,7 @@ header .wrapper {
 
 .catalogue-image__btn-circle {
     background-color: #05285a;
-    box-shadow: 0px 0px 0px 5px #fabe0a;
+    box-shadow: 0px 0px 0px 5px rgba(250, 190, 10, .40);;
 }
 
 .catalogue-image__btn.active p {
@@ -844,13 +879,13 @@ header .wrapper {
     left: 42px;
 }
 
-.why-item .why-element-img.second {
+.why-item .why-element-img.secondd {
     width: 30px;
     left: 49px;
     top: -27;
 }
 
-.why-item .why-element-img.third {
+.why-item .why-element-img.thirdd {
     width: 39px;
     left: 43.5px;
     top: -27;
@@ -927,6 +962,8 @@ header .wrapper {
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-bottom: 35px;
+    font-size: 24px;
 }
 
 .questions form {
@@ -936,8 +973,9 @@ header .wrapper {
 
 .questions form input {
     border-bottom: 0.5px solid #fafafa;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     letter-spacing: 1px;
+    font-size: 15px;
 }
 
 .questions form input:nth-child(2) {
@@ -954,7 +992,8 @@ header .wrapper {
 }
 
 .questions-img {
-    width: 900px;
+    width: 800px;
+    padding-bottom: 70px;
 }
 
 .contact-list {
