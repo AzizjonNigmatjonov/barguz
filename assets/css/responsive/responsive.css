@@ -2736,11 +2736,16 @@
 }
 
 @media (max-width: 360px) {
+    .main {
+        margin-top: 60px;
+    }
+
     .main-subtext {
         line-height: 16px;
         letter-spacing: normal;
         font-size: 13px;
-        width: 100%;
+        width: 300px;
+        margin-top: 5px;
     }
 
     .main-image__btn p {
@@ -2809,7 +2814,6 @@
 
     .company .company-item:nth-child(2n) {
         width: 100% !important;
-        background-color: red;
     }
 
     .company .company-item:nth-child(2n) img {
@@ -2934,6 +2938,11 @@
     .main-more-btn {
         top: 640px !important;
     }
+
+    .main-subtext {
+       width: 100%;
+    }
+
 }
 
 @media (max-width: 280px) {
