@@ -162,7 +162,7 @@
         width: 500px;
     }
 
-    .company-img {
+    .company-item img {
         width: 450px !important;
         margin-left: 50px;
     }
@@ -497,13 +497,6 @@
         width: 100%;
         padding-bottom: 70px !important;
     }
-
-    .company-item img {
-        width: 100%;
-        margin: 0 auto;
-        padding-bottom: 0;
-        margin: 0;
-    }
     
     .company-item:nth-child(1) {
         flex-direction: column;
@@ -520,9 +513,10 @@
         text-align: start;
     }
 
-    .company-item:nth-child(2) {
-        width: 400px !important;
-        margin: 0 auto !important;
+    .company-item img {
+        width: 450px !important;
+        margin: 0 0 0 auto !important;
+        padding-bottom: 0;
     }
     
     .company-text-second {
@@ -649,6 +643,10 @@
     .company-title {
         padding-bottom: 40px !important;
         margin-bottom: 0;
+    }
+
+    .company-item img {
+        width: 400px !important;
     }
 
     .catalogue .container {
@@ -842,8 +840,13 @@
         flex-direction: column-reverse;
     }
 
+    .company-item:nth-child(2) {
+        width: auto !important;
+    }
+
     .company-item img {
         width: 400px;
+        margin-left: 0;
     }
     
     .company-item p {
@@ -864,10 +867,6 @@
     
     .company-item:nth-child(1n) {
         width: 630px;
-    }
-    
-    .company-item:nth-child(2n) {
-        width: 600px;
     }
     
     .catalogue {
@@ -1132,11 +1131,7 @@
     .main-more-btn {
         top: 720px;
     }
-    
-    .company-item:nth-child(2) {
-        width: 400px !important;
-    }
-    
+
     .company-item:nth-child(1) {
         width: 600px;
     }
@@ -1525,14 +1520,10 @@
         padding-top: 0px;
     }
     
-    .company-item:nth-child(2) {
-        width: 400px !important;
-    }
-    
     .company-item:nth-child(1n) {
         width: 500px;
     }
-    
+
     .order .container {
         padding: 60px 0px 0px 0px;
     }
@@ -1613,7 +1604,7 @@
         padding-bottom: 0;
     }
 
-    header.header.sticky {
+    header.sticky {
         padding-bottom: 0;
     }
     
@@ -1644,7 +1635,6 @@
     .order .container {
         padding: 40px 0px 0px 0px;
     }
-    
     
     .catalogue .container {
         padding-top: 30px;
@@ -1818,12 +1808,17 @@
         padding-top: 0 !important;
     }
 
+    .company-item img {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     .why-img {
         width: 300px;
     }
     
-    .company-item:nth-child(2) {
-        width: 350px !important;
+    .company-item:nth-child(1n) {
+        width: 90% !important;
     }
 
     .order .container {
@@ -2023,13 +2018,13 @@
     .catalogue-title {
         margin-bottom: 30px;
     }
-
-    .company .company-item:nth-child(2) {
-        width: 340px !important;
-    }
     
     .company-item:nth-child(1n) {
         width: 90% !important;
+    }
+
+    .company-item img {
+        width: 350px !important;
     }
     
     .company-text-span-1 {
@@ -2201,12 +2196,24 @@
         padding-top: 30px !important;
     }
 
+    .company .container {
+        padding-top: 30px;
+    }
+
+    .company-item:nth-child(1) {
+        width: 100%;
+    }
+
+    .company-item:nth-child(1) p {
+        width: 100%;
+    }
+
     .company-title {
         padding-bottom: 25px !important;
     }
 
-    .company-img {
-        width: 100%;
+    .company-item img {
+        width: 300px !important;
     }
     
     .why .container {
@@ -2239,22 +2246,6 @@
     
     .main-social-links {
         top: 285px;
-    }
-
-    .company .container {
-        padding-top: 30px;
-    }
-
-    .company-item:nth-child(2) {
-        width: 100%;
-    }
-
-    .company-item:nth-child(1) {
-        width: 100%;
-    }
-
-    .company-item:nth-child(1) p {
-        width: 100%;
     }
     
     .order-list {
@@ -2320,6 +2311,59 @@
         top: -175px;
     }
 
+    .main-btn-1  {
+        top: 480px;
+        left: 40%;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-1.active {
+        top: 480px;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        top: 480px;
+        right: 38%;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-2.active {
+        top: 480px;
+        right: 36.38%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-3 {
+        top: 560px;
+        left: 45%;
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    
+    .main-btn-3.active {
+        top: 560px;
+        right: 52%;
+        transform: translateX(-50%);
+    }
+    
+    .main-btn-4 {
+        flex-direction: column-reverse;
+        transform: rotate(0deg) translateX(-50%);
+        top: 560px;
+        right: 38%;
+    }
+    
+    .main-btn-4.active {
+        top: 560px;
+        right: 36.3%;
+        transform: translateX(-50%);
+    }
+
     .main-image__btn p {
         color: #303030aa;
         font-weight: 500;
@@ -2344,14 +2388,8 @@
         margin: 0 !important;
     }
 
-    .company-item:nth-child(2) {
+    .company-item img {
         width: 300px !important;
-        margin: 0 !important;
-    }
-
-    .company-item:nth-child(2) img {
-        width: 300px !important;
-        margin: 0 auto;
     }
 
     .catalogue-item:last-child {
@@ -2426,13 +2464,12 @@
         padding-top: 15px !important;
     }
 
-    .company-item:nth-child(2) img {
-        width: 90% !important;
-        margin: 0 auto;
-    }
-    
     .company-item .company-text:nth-child(2n) {
         display: none;
+    }
+
+    .company-item img {
+        width: 250px !important;
     }
 
     .catalogue .container {
@@ -2580,6 +2617,9 @@
         padding-top: 0;
     }
 
+    .company-item img {
+        width: 100% !important;
+    }
     
     .order-list {
         padding: 0 !important;
@@ -2773,14 +2813,6 @@
     .main-more-btn {
         font-size: 14px;
         top: 620px !important;
-    }
-
-    .company .company-item:nth-child(2n) {
-        width: 100% !important;
-    }
-
-    .company .company-item:nth-child(2n) img {
-        width: 800px !important;
     }
 
     .company-text {
@@ -2984,10 +3016,6 @@
 
     .company .container {
         padding-top: 0px;
-    }
-
-    .company .company-item:nth-child(2n) img {
-        width: 100% !important;
     }
 
     .catalogue .container {
