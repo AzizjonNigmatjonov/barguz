@@ -2425,10 +2425,6 @@
     .company .container {
         padding-top: 15px !important;
     }
-  
-    .company-item {
-        width: 100% !important;
-    }
 
     .company-item:nth-child(2) img {
         width: 90% !important;
