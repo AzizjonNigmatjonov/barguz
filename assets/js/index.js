@@ -441,7 +441,7 @@ $(function() {
             if(scrolled > navHeight) {
                 $('header').addClass('sticky')
             } else {
-                $('.header').removeClass('sticky')
+                $('header').removeClass('sticky')
             }
         } 
 
