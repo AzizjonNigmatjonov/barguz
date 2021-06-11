@@ -2580,10 +2580,6 @@
         padding-top: 0;
     }
 
-    /* .company-item:nth-child(2) img {
-        width: 70% !important;
-        margin: 0 auto;
-    } */
     
     .order-list {
         padding: 0 !important;
@@ -2784,7 +2780,7 @@
     }
 
     .company .company-item:nth-child(2n) img {
-        width: 230px !important;
+        width: 800px !important;
     }
 
     .company-text {
