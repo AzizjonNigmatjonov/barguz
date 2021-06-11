@@ -1532,10 +1532,6 @@
     .company-item:nth-child(1n) {
         width: 500px;
     }
-
-    .company-item img {
-        width: 100%;
-    }
     
     .order .container {
         padding: 60px 0px 0px 0px;
@@ -1821,19 +1817,11 @@
     .company .container {
         padding-top: 0 !important;
     }
-    
-    .company-img {
-        width: 100%;
-    }
 
     .why-img {
         width: 300px;
     }
     
-    .company-item:nth-child(1n) {
-        width: 90% !important;
-    }
-
     .company-item:nth-child(2) {
         width: 350px !important;
     }
