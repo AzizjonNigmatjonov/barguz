@@ -661,6 +661,7 @@ header .wrapper {
 .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar {
     width: 6px;
     height: 7px;
+    margin-right: 2px;
 }
 
 .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb {
