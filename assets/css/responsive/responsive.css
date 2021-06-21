@@ -404,7 +404,7 @@
         justify-content: center;
         align-items: center;
         top: 471px;
-        right: 790px;
+        right: 830px;
         transform: rotate(2deg);
     }
     
@@ -417,8 +417,8 @@
     }
     
     .main-btn-2.active {
-        top: 465px;
-        right: 778px;
+        top: 463px;
+        right: 820px;
     }
     
     .main-btn-3 {
@@ -437,8 +437,8 @@
     }
     
     .main-btn-3.active {
-        top: 464px;
-        right: 578px;
+        top: 466px;
+        right: 570px;
     }
     
     .main-btn-4 {
@@ -760,7 +760,7 @@
     
     .main .container {
         padding-top: 0;
-        padding-bottom: 140px;
+        padding-bottom: 10px;
     }
     
     .main-title br {
@@ -769,6 +769,22 @@
     
     .main-subtext {
         width: 500px;
+    }
+
+    .main-image-change-res-header {
+        display: block;
+    }
+
+    .main-images-select-wrapper {
+        display: block;
+    }
+    
+    .main-images-res-wrapper {
+        display: block;
+    }
+
+    .main-line {
+        display: none;
     }
 
     .main-btn-1  {
