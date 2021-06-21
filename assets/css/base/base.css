@@ -659,7 +659,7 @@ header .wrapper {
 }
 
 .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
     height: 13px;
 }
 
