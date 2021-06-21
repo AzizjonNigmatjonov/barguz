@@ -655,27 +655,28 @@ header .wrapper {
     left: 0px;
     background-color: rgba(245, 245, 245, .88); 
     opacity: 1;
+    overflow-x: hidden;
 }
 
 .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar {
-    width: 13px;
+    width: 8px;
     height: 13px;
-   }
+}
 
-   .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb {
-    background: linear-gradient(60deg, #05285a 43%,#202020 49%);
+.catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, #5776A2 43%,#5776A2 49%);
     border-radius: 10px;
-   }
+}
 
-   .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(13deg, #05285A 14%,#202020 64%);
-   }
+.catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #5776A2 14%,#5776A2 64%);
+}
 
-   .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-track{
-    background: #ffffff;
+.catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-track{
+    background: rgba(245, 245, 245, .88); 
     border-radius: 10px;
-    box-shadow: inset 7px 10px 12px #f0f0f0;
-   }
+    box-shadow: inset 0px 0px 0px rgba(245, 245, 245, .88);     
+}
 
 .catalogue-title {
     color: #303030;
