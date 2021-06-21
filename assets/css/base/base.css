@@ -640,6 +640,14 @@ header .wrapper {
     text-align: start;
 }
 
+.catalogue-item-content-text-colored {
+    color: #303030ff ;
+    padding-top: 10px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    text-align: start;
+}
+
 .catalogue-item:hover .catalogue-item-content {
     width: 110%;
     height: 105%;
@@ -648,6 +656,26 @@ header .wrapper {
     background-color: rgba(245, 245, 245, .88); 
     opacity: 1;
 }
+
+.catalogue-item:hover .catalogue-item-content::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+   }
+
+   .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, #05285a 43%,#202020 49%);
+    border-radius: 10px;
+   }
+
+   .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #05285A 14%,#202020 64%);
+   }
+
+   .catalogue-item:hover .catalogue-item-content::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+   }
 
 .catalogue-title {
     color: #303030;
@@ -690,23 +718,23 @@ header .wrapper {
     right: 153.4px;
 }
 
-.catalogue-btn-1 {
+.catalogue-btn-2 {
     position: absolute;
     top: 150px;
     right: 178px;
 }
 
-.catalogue-btn-1.active {
+.catalogue-btn-2.active {
     right: 177px;
 }
 
-.catalogue-btn-2 {
+.catalogue-btn-1 {
     position: absolute;
     top: 240px;
     right: 190px;
 }
 
-.catalogue-btn-2.active {
+.catalogue-btn-1.active {
     right: 187px;
 }
 
