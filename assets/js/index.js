@@ -306,6 +306,38 @@ const catalogueSelectOptionElement = document.querySelectorAll('.catalogue-selec
 
 AOS.init();
 
+
+// main img select responsive
+const mainImageChangeHederText = document.querySelector('.main-image-select-header-text');
+const mainImageChangeResTexts = document.querySelectorAll('.main-image-responsive-select-text');
+const mainImageChangeResList = document.querySelector('.main-image-select-res-list');
+const mainImagesRes = document.querySelectorAll('.main-image-res')
+const mainImgChangeWrapper = document.querySelector('.main-images-select-wrapper');
+mainImgChangeWrapper.style.display = 'none';
+
+mainImageChangeHederText.addEventListener('click', function(e) {
+    mainImageChangeResList.classList.add('active');
+    mainImgChangeWrapper.style.display = 'block';
+    mainImageChangeHederText.classList.add('active');
+})
+
+mainImageChangeResTexts.forEach(function(text){
+    text.addEventListener('click', e => {
+        mainImagesRes.forEach(function(img) {
+            if (e.target.dataset.target == img.id) {
+                img.classList.add('active');
+                mainImgChangeWrapper.style.display = 'none';
+                mainImageChangeResList.classList.remove('active');
+                mainImageChangeHederText.textContent = e.target.textContent;
+                mainImageChangeHederText.classList.remove('active');
+            } else {
+                img.classList.remove('active');
+            }
+        })
+    })
+    
+})
+
 const catalogueSelectList = document.querySelector('.catalogue-select-list');
 const catalogueSelectItem = document.querySelectorAll('.catalogue-select-list li');
 const catalogueSecectText = document.querySelector('.catalogue-selector-text');
@@ -322,6 +354,11 @@ window.addEventListener('click', e => {
         catalogueSelectList.classList.add('remove')
         catalogueSelectModal.style.display = 'none';   
         catalogueSecectText.classList.remove('active')   
+    }
+    if (e.target == mainImgChangeWrapper) {
+        mainImageChangeResList.classList.remove('active');
+        mainImgChangeWrapper.style.display = 'none';
+        mainImageChangeHederText.classList.remove('active');
     }
 })
 
@@ -428,33 +465,33 @@ catalogueSecectText.addEventListener('click', e => {
 })
 
 
-$(function() {
+// $(function() {
      
-    var scroll = $(document).scrollTop();
-    var navHeight = $('header').outerHeight();
+//     var scroll = $(document).scrollTop();
+//     var navHeight = $('header').outerHeight();
 
-    $(window).scroll(function() {
+//     $(window).scroll(function() {
 
-        var scrolled = $(document).scrollTop();
+//         var scrolled = $(document).scrollTop();
 
-        if (scroll) {
-            if(scrolled > navHeight) {
-                $('header').addClass('sticky')
-            } else {
-                $('header').removeClass('sticky')
-            }
-        } 
+//         if (scroll) {
+//             if(scrolled > navHeight) {
+//                 $('header').addClass('sticky')
+//             } else {
+//                 $('header').removeClass('sticky')
+//             }
+//         } 
 
-        if (scroll) {
-            if (scrolled > scroll) {
-                $('header').removeClass('sticky')
-            } else {
-                $('header').addClass('sticky')
-            }
+//         if (scroll) {
+//             if (scrolled > scroll) {
+//                 $('header').removeClass('sticky')
+//             } else {
+//                 $('header').addClass('sticky')
+//             }
     
-        }
-        scroll = $(document).scrollTop();
+//         }
+//         scroll = $(document).scrollTop();
 
-    })
+//     })
 
-})
+// })
