@@ -511,6 +511,10 @@ header .wrapper {
     transform: rotate(90deg);
 }
 
+.main-image-responsive-select-text {
+    margin-bottom: 10px;
+}
+
 .main-image-select-header-text.active::after{
     transform: rotate(-90deg);
 }

@@ -2023,6 +2023,10 @@
         top: 740px;
     }
 
+    .main-images-select-wrapper {
+        top: 335px !important;
+    }
+
     .catalogue-text {
         color: #303030;
         font-weight: 500;
@@ -2203,6 +2207,10 @@
     
     .main-more-btn {
         top: 650px !important;
+    }
+
+    .main-images-select-wrapper {
+        top: 310px !important;
     }
 
     .company .container {
@@ -2417,7 +2425,7 @@
     }
 
     .main-images-select-wrapper {
-        top: 295px !important;
+        top: 300px !important;
     }
     
     .company .container {
@@ -2575,7 +2583,7 @@
     }
 
     .main-images-select-wrapper {
-        top: 259px !important;
+        top: 264px !important;
     }
 
     .company .container {
