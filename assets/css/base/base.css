@@ -628,6 +628,8 @@ header .wrapper {
 
 .catalogue-item-content-title {
     letter-spacing: 1.2px;
+    text-align: start;
+    width: 100%;
 }
 
 .catalogue-item-content p {
