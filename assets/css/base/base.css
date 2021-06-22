@@ -561,6 +561,11 @@ header .wrapper {
     height: 450px;
 }
 
+.company-item-second {
+    width: 460px;
+    margin-bottom: 50px;
+}
+
 .company-title {
     color: #303030;
     letter-spacing: 1.3px;
