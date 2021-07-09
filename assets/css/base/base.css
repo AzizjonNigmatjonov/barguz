@@ -1263,7 +1263,7 @@ header .wrapper {
 @keyframes mainImageChangeResList {
     0% {
         opacity: 0;
-        top: -200px;
+        top: 50px;
     }
     100% {
         opacity: 1;

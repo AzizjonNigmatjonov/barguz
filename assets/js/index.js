@@ -465,8 +465,21 @@ catalogueSecectText.addEventListener('click', e => {
 })
 
 
+var swiper = new Swiper(".mySwiper2", {
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    speed: 800,
+    lazy: true,
+    parallax: true,
+    slidesPerView: '1',
+    
+});
+
+
 // $(function() {
-     
+
 //     var scroll = $(document).scrollTop();
 //     var navHeight = $('header').outerHeight();
 
@@ -488,7 +501,7 @@ catalogueSecectText.addEventListener('click', e => {
 //             } else {
 //                 $('header').addClass('sticky')
 //             }
-    
+
 //         }
 //         scroll = $(document).scrollTop();
 

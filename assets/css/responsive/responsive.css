@@ -789,10 +789,12 @@
 
     .main-images-select-wrapper {
         display: block;
+        top: 380px !important;
     }
     
     .main-images-res-wrapper {
         display: block;
+        top: 380px !important;
     }
 
     .main-line {
@@ -1114,6 +1116,10 @@
         top: 720px;
     }
 
+    .main-images-select-wrapper {
+        top: 330px !important;
+    }
+
     .company-item:nth-child(1) {
         width: 600px;
     }
@@ -1141,6 +1147,10 @@
 }
 
 @media (max-width: 930px) {
+    .main-images-select-wrapper {
+        top: 330px !important;
+    }
+
     .company .container {
         padding-top: 30px !important;
     }
@@ -1231,12 +1241,20 @@
 }
 
 @media (max-width: 850px) {
+    .main-images-select-wrapper {
+        top: 330px !important;
+    }
+
     .catalogue-slider-line  {
         right: 380px;
     }
 }
 
 @media (max-width: 800px) {
+    .main-images-select-wrapper {
+        top: 330px !important;
+    }
+
     .catalogue-slider-line  {
         right: 370px;
     }
@@ -1321,6 +1339,10 @@
     
     .main .container {
         padding-bottom: 70px;
+    }
+
+    .main-images-select-wrapper {
+        top: 335px !important;
     }
 
     .main-image__btn p {
@@ -1490,6 +1512,10 @@
         padding-bottom: 50px;
     }
 
+    .main-images-select-wrapper {
+        top: 335px !important;
+    }
+
     .company .container {
         padding-top: 70px !important;
     }
@@ -1504,6 +1530,10 @@
     
     .company-item:nth-child(1n) {
         width: 500px;
+    }
+
+    .catalogue-select-header {
+        margin-top: 60px;
     }
 
     .order .container {
@@ -1567,6 +1597,10 @@
 }
 
 @media (max-width: 682px) {
+    .main-images-select-wrapper {
+        top: 335px !important;
+    }
+
     .catalogue-list {
         overflow-y: scroll;
     }       
@@ -1574,6 +1608,7 @@
     .catalogue-select {
         left: 40px;
     }
+    
 }
 
 @media (max-width: 640px) {
@@ -1732,6 +1767,7 @@
 
     .main-images-select-wrapper {
         display: block;
+        top: 315px !important;
     }
     
     .main-images-res-wrapper {
@@ -2024,7 +2060,7 @@
     }
 
     .main-images-select-wrapper {
-        top: 335px !important;
+        top: 360px !important;
     }
 
     .catalogue-text {
@@ -2088,6 +2124,7 @@
     .catalogue-select-content  {
         width: 370px;
     }
+
     
 }
 
@@ -2359,12 +2396,15 @@
     .company-item img {
         width: 300px !important;
     }
+    
 
     .catalogue-item:last-child {
         transform: translateX(68%);
     }
+
     .catalogue-select-header {
         width: 360px;
+        margin-top: 50px;
     }
 
     .catalogue-select-content  {
@@ -2695,6 +2735,17 @@
     .catalogue-item:hover .catalogue-item-content {
         width: 120%;
         left: -15px;
+    }
+
+    .catalogue-item-content h1 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .catalogue-item-content p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
     }
 
     .catalogue-select-header {

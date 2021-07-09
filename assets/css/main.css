@@ -11239,10 +11239,6 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-body{
-  font-family: Montserrat;
-}
-
 .font-thin{
   font-weight: 100;
 }
@@ -40514,10 +40510,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:font-body{
-    font-family: Montserrat;
-  }
-
   .sm\:font-thin{
     font-weight: 100;
   }
@@ -69617,10 +69609,6 @@ video {
 
   .md\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .md\:font-body{
-    font-family: Montserrat;
   }
 
   .md\:font-thin{
@@ -98724,10 +98712,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:font-body{
-    font-family: Montserrat;
-  }
-
   .lg\:font-thin{
     font-weight: 100;
   }
@@ -127829,10 +127813,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-body{
-    font-family: Montserrat;
-  }
-
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -156932,10 +156912,6 @@ video {
 
   .\32xl\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .\32xl\:font-body{
-    font-family: Montserrat;
   }
 
   .\32xl\:font-thin{
