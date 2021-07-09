@@ -24,6 +24,14 @@
     .catalogue-list {
         margin-left: 70px;
     }
+
+    .company-list {
+        justify-content: space-between;
+    }
+
+    .company-item:nth-child(1) {
+        margin-right: 0px;
+    }
     
 }
 
@@ -2465,7 +2473,7 @@
     }
 
     .main-images-select-wrapper {
-        top: 300px !important;
+        top: 297px !important;
     }
     
     .company .container {
@@ -2623,7 +2631,7 @@
     }
 
     .main-images-select-wrapper {
-        top: 270px !important;
+        top: 250px !important;
     }
 
     .company .container {

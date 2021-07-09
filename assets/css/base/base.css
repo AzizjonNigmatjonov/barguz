@@ -585,6 +585,10 @@ header .wrapper {
     letter-spacing: 1.3px;
 }
 
+.company-item:nth-child(1) {
+    margin-right: 100px;
+}
+
 .company-text {
     width: 550px;
     font-size: 16px;
